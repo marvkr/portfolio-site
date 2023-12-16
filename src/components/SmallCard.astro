@@ -11,10 +11,10 @@ const { image } = Astro.props;
 ---
 
 <a class="w-full h-80 md:h-full group relative rounded-2xl overflow-hidden" href={link}>
-    <img class="absolute w-full h-full object-cover z-0" src={image} alt="Menu Image">
+    <img class="absolute w-full h-full object-cover z-0 border-none" src={image} alt="Menu Image">
     <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent"></div>
     <div class="absolute bottom-0 left-0 w-full h-full z-10 bg-black/20 group-hover:bg-black/0 ease-in duration-300"></div>
-    <div class="group flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-5 py-1 bg-background rounded-tl-2xl z-20">
+    <div class="group flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-3 py-1 bg-background rounded-tl-2xl z-20 border-none">
         <svg  class="absolute bottom-0 -left-6 h-6 w-6 fill-background" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"/>
         </svg>
