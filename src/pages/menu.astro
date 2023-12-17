@@ -1,0 +1,46 @@
+---
+import { MenuTabs } from "@/components/MenuTabs";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Menu">
+    <div class="lg:h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-2 gap-4 overflow-hidden">
+        <div class="sticky top-0 h-80 lg:h-full overflow-hidden rounded-3xl">
+            <img class="absolute w-full h-full inset-0 object-cover z-0" src="./images/menu-page-image.webp" alt="plate of sushi">
+            <div class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black to-transparent z-10"></div>
+			<!-- H1 element for the restaurant name -->
+			 <h1 class="absolute bottom-3 lg:bottom-5 left-5 text-white text-xl lg:text-7xl font-bold z-20">Menu</h1>
+			 <!-- CTA -->
+			 <div class="flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-5 py-1 bg-background rounded-tl-2xl z-30">
+				<!-- Border mask -->
+				<svg  class="absolute bottom-0 -left-6 h-6 w-6 fill-background" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"/>
+				</svg>
+				<svg  class="absolute right-0 -top-6 h-6 w-6 fill-background" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"/>
+				</svg>
+				<!-- Phone icon -->
+				<div class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="m19.23 15.26l-2.54-.29a1.99 1.99 0 0 0-1.64.57l-1.84 1.84a15.045 15.045 0 0 1-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52a2.001 2.001 0 0 0-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07c.53 8.54 7.36 15.36 15.89 15.89c1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98"/>
+                    </svg>
+				</div>
+				<!-- Uber Eats icon -->
+				<div class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M0 2.865v4.997c0 1.883 1.332 3.13 3.084 3.13a2.965 2.965 0 0 0 2.15-.877v.743h1.211V2.864H5.223v4.934c0 1.265-.87 2.12-1.995 2.122c-1.139-.002-1.997-.834-1.997-2.122V2.865zm7.363 0v7.993h1.162v-.732a2.992 2.992 0 0 0 2.118.876a3.044 3.044 0 1 0 0-6.086a2.967 2.967 0 0 0-2.107.876V2.865zm9.885 2.056a3.022 3.022 0 0 0-3.035 3.024c0 1.737 1.373 3.037 3.153 3.037a3.123 3.123 0 0 0 2.558-1.243l-.85-.618a2.05 2.05 0 0 1-1.708.858a1.971 1.971 0 0 1-1.97-1.655h4.817v-.379c0-1.734-1.254-3.024-2.964-3.024zm6.163.066a1.594 1.594 0 0 0-1.376.766v-.719h-1.163v5.824h1.174V7.546c0-.902.559-1.484 1.327-1.484h.495V4.989zm-6.203.944a1.844 1.844 0 0 1 1.834 1.486h-3.618a1.844 1.844 0 0 1 1.784-1.486m-6.659.006a2.021 2.021 0 1 1 .002 4.042a2.015 2.015 0 0 1-1.416-.598a2.015 2.015 0 0 1-.585-1.422a2.015 2.015 0 0 1 .584-1.422a2.015 2.015 0 0 1 1.415-.6M0 12.987v7.971h5.722v-1.367H1.546v-1.97H5.61v-1.315H1.545v-1.955h4.176v-1.365zm14.56.41v1.685h-1.15v1.338h1.154v3.143c0 .793.572 1.421 1.6 1.421h1.643l-.006-1.338H16.66c-.348 0-.572-.15-.572-.464v-2.768H17.8v-1.332h-1.706v-1.686zm-5.297 1.527a3.103 3.103 0 1 0 .07 6.205a2.992 2.992 0 0 0 1.913-.666v.532h1.517v-5.913h-1.509v.526a3.005 3.005 0 0 0-1.92-.684zm11.771.007c-1.585 0-2.7.644-2.7 1.886c0 .86.613 1.421 1.936 1.695l1.448.328c.57.11.722.259.722.49c0 .371-.438.603-1.127.603c-.876 0-1.378-.19-1.573-.848h-1.533c.22 1.231 1.157 2.05 3.049 2.05h.002c1.752 0 2.742-.819 2.742-1.953c0-.806-.585-1.408-1.809-1.667l-1.294-.26c-.751-.136-.988-.274-.988-.546c0-.357.361-.575 1.03-.575c.722 0 1.252.192 1.405.847h1.518c-.086-1.229-.99-2.05-2.827-2.05m-11.567 1.25c1.01.01 1.819.837 1.807 1.847A1.8 1.8 0 0 1 9.45 19.83a1.824 1.824 0 0 1 .018-3.648"/>
+                    </svg>
+				</div>
+				<!-- Deliveroo icon -->
+				<div class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="m16.861 0l-1.127 10.584L13.81 1.66L7.777 2.926l1.924 8.922l-8.695 1.822l1.535 7.127L17.832 24l3.498-7.744L22.994.636zM11.39 13.61a.755.755 0 0 1 .322.066c.208.093.56.29.63.592c.103.434.004.799-.312 1.084v.002c-.315.284-.732.258-1.174.113c-.441-.145-.637-.672-.47-1.309c.124-.473.71-.544 1.004-.549zm4.142.548c.447-.012.832.186 1.05.543c.217.357.107.75-.122 1.143h-.002c-.229.392-.83.445-1.422.16c-.399-.193-.397-.684-.353-.983a.922.922 0 0 1 .193-.447c.142-.177.381-.408.656-.416"/>
+                    </svg>
+				</div>
+        	</div>
+		</div>
+		<div class="relative py-4 flex flex-row justify-center overflow-auto rounded-3xl border border-border bg-cover bg-scroll" style="background-image: var(--menu-background-image);">
+        <MenuTabs client:load/>
+        </div>
+    </div>
+</Layout>

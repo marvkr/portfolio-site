@@ -1,0 +1,26 @@
+---
+import { RatingCard } from "@/components/RatingCard";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="About">
+    <div class="lg:h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-2 gap-4 overflow-hidden">
+        <div class="flex flex-col gap-4">
+            <div class="relative h-40 lg:h-full overflow-hidden rounded-3xl">
+                <img class="absolute w-full h-full inset-0 object-cover z-0" src="./images/menu-page-image.webp" alt="plate of sushi">
+                <div class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black to-transparent z-10"></div>
+                        <!-- H1 element for the restaurant name -->
+                         <h1 class="absolute bottom-3 lg:bottom-5 left-5 text-white text-3xl lg:text-7xl font-bold z-20">About</h1>
+                    </div>
+            <div class="grid grid-cols-2 gap-4">
+                <RatingCard rating={4.7} platform="Google" logo="/google-logo.svg"/>
+                <RatingCard rating={4.7} platform="TripAdvisor" logo="/tripadvisor-logo.svg"/>
+            </div>
+        </div>
+		<div class="relative py-4 grid-rows-5">
+        <div class="row-span-1 grid-cols-2"></div>
+        <div class="row-span-2"></div>
+        <div class="row-span-2"></div>            
+        </div>
+    </div>
+</Layout>
