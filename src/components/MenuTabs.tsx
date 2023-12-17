@@ -6,10 +6,15 @@ import { MenuType as MenuData } from "@/config/food-menu";
 export function MenuTabs() {
   return (
     <>
-      <Tabs defaultValue={MenuData[0].title} className="w-[400px]">
+      <Tabs
+        defaultValue={MenuData[0].title}
+        className="w-full px-8 pt-4 sm:pt-10 sm:px-20 z-10">
         <TabsList>
           {MenuData.map((menu) => (
-            <TabsTrigger key={menu.title} value={menu.title}>
+            <TabsTrigger
+              key={menu.title}
+              value={menu.title}
+              className="font-bold">
               {menu.title}
             </TabsTrigger>
           ))}
@@ -17,10 +22,14 @@ export function MenuTabs() {
         {MenuData.map((menu) => (
           <TabsContent key={menu.title} value={menu.title} className="mt-4">
             {menu.dishes.map((dish) => (
-              <div key={dish.name} className="border-b border-gray-200 py-2">
-                <h2 className="text-xl font-bold">{dish.name}</h2>
-                <p className="text-sm text-gray-500">{dish.description}</p>
-                <p className="text-lg font-semibold">{dish.price}</p>
+              <div key={dish.name} className="border-b border-border py-4">
+                <div className="flex flex-row items-center justify-between">
+                  <h2 className="text-xl font-bold">{dish.name}</h2>
+                  <p className="text-lg font-semibold">€{dish.price}</p>
+                </div>
+                <p className="text-sm text-foreground mt-4">
+                  {dish.description}
+                </p>
               </div>
             ))}
           </TabsContent>
