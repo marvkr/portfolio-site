@@ -87,7 +87,7 @@ export const MenuType: MenuType[] = [
     ],
   },
   {
-    title: "SPECIAL ROLLS",
+    title: "ROLLS",
     dishes: [
       {
         name: "SUNRISE BLISS",

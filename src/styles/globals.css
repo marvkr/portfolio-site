@@ -56,11 +56,116 @@
 @layer base {
   @font-face {
     font-family: "Juana";
-    src: url("/fonts/Juana-Regular.otf") format("opentype");
-    font-weight: normal;
+    src: url("/fonts/Juana-Black.otf") format("opentype");
+    font-weight: 900;
     font-style: normal;
-    font-display: swap;
   }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Blacklt.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Boldit.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-SemiBoldit.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Regularlt.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Mediumlt.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-ExtraLightlt.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Lightlt.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Juana";
+    src: url("/fonts/Juana-ThinIt.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+  }
+
   body {
     font-family: "Juana";
     font-weight: 400;
