@@ -7,9 +7,15 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind({
-    applyBaseStyles: false
-  }), sitemap()],
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    sitemap(),
+  ],
   output: "server",
-  adapter: netlify()
+  adapter: netlify({
+    edgeMiddleware: true,
+  }),
 });
