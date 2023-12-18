@@ -5,10 +5,10 @@ import SmallCard from '@/components/SmallCard.astro';
 
 
 <Layout title="Restaurant Template">
-	<div class="min-h-screen px-6 py-6 grid grid-flow-row md:grid-cols-4 gap-4">
-		<div class="md:col-span-3 relative h-80 sm:h-full overflow-hidden rounded-3xl">
+	<div class="min-h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-7 gap-4">
+		<div class="lg:col-span-5 relative h-80 lg:h-full overflow-hidden rounded-3xl">
 			<!-- Image div with background image -->
-			<img class="absolute h-full inset-0 object-cover z-0" src="./images/main-image.webp" alt="main course image">
+			<img class="absolute w-full h-full inset-0 object-cover z-0" src="./images/main-image.webp" alt="main course image">
 			<!-- Linear gradient overlay -->
 			<div class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black to-transparent z-10"></div>
 			<!-- H1 element for the restaurant name -->
@@ -44,9 +44,30 @@ import SmallCard from '@/components/SmallCard.astro';
 				</div>
 			</div>
 		</div>
-		<div class="md:col-span-1 grid grid-rows-3 gap-4">
-		<SmallCard title="Menu" link="/menu" image="./images/menu-image.webp"/>
+		<div class="lg:col-span-2 max-sm:flex max-sm:flex-col grid grid-rows-3 gap-4">
+		<SmallCard title="Menu" link="/menu" image="./images/menu-page-image.webp"/>
 		<SmallCard title="Our Restaurant" link="/about" image="./images/restaurant-image.webp"/>
+		<div class="flex flex-col p-4 rounded-lg border border-border bg-cover" style="background-image: var(--menu-background-image);">
+			<h2 class="col-span-2 font-bold text-center mb-4">Opening Hours</h2>
+			<div class="grid grid-cols-3 gap-1">
+				<div class="col-span-1 font-bold">Monday-Thursday</div>
+				<div class="col-span-2 text-right">12:00-15:00 | 17:00-21:00</div>
+				
+				<div class="col-span-1 font-bold">Saturday</div>
+				<div class="col-span-2 text-right">12:00 - 15:00 | 17:00 - 21:00</div>
+				
+				<div class="col-span-1 font-bold">Sunday</div>
+				<div class="col-span-2 text-right">12:00 - 15:00 | 17:00 - 21:00</div>
+			</div>
+			<div class="mt-3 flex flex-row items-center justify-between">
+				<p>Tiensestraat 28
+					3000 Leuven</p>
+				<div class="flex flex-row items-center gap-4">
+					<a href=""><img class="w-10 h-10" src="./images/apple-map-icon.webp" alt="our address on Apple Map"></a>
+					<a href=""><img class="w-10 h-10" src="./images/google-map-icon.webp" alt="our address on Google Map"></a>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 	  

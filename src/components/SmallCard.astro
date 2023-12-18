@@ -10,7 +10,7 @@ const { link } = Astro.props;
 const { image } = Astro.props;
 ---
 
-<a class="w-full h-80 md:h-full group relative rounded-2xl overflow-hidden" href={link}>
+<a class="w-full h-80 md:h-96 lg:h-full group relative rounded-2xl overflow-hidden" href={link}>
     <img class="absolute w-full h-full object-cover z-0 border-none" src={image} alt="Menu Image">
     <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent"></div>
     <div class="absolute bottom-0 left-0 w-full h-full z-10 bg-black/20 group-hover:bg-black/0 ease-in duration-300"></div>
