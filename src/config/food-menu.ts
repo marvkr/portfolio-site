@@ -2,6 +2,7 @@ export type Dish = {
   name: string;
   price: number;
   description: string;
+  image?:string;
 };
 
 export type MenuType = {

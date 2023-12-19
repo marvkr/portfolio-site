@@ -26,7 +26,7 @@ export function TestimonialCard() {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center border border-border rounded-xl p-10">
-      <div className="mx-auto text-center">
+      <div className="text-center">
         <h3 className="text-foreground font-semibold pb-6">
           What people are saying
         </h3>
