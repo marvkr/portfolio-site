@@ -1,28 +1,37 @@
-import * as React from 'react';
-import { Moon, Sun } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import * as React from "react";
+import { Moon, Sun } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function ModeToggle() {
-
   // Define getThemePreference function
   const getThemePreference = () => {
-    if (typeof window !== 'undefined') {
-      const storedTheme = localStorage.getItem('theme');
+    if (typeof window !== "undefined") {
+      const storedTheme = localStorage.getItem("theme");
       if (storedTheme) {
-        return storedTheme === 'dark' ? 'dark' : 'theme-light';
+        return storedTheme === "dark" ? "dark" : "theme-light";
       }
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'theme-light';
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "theme-light";
     }
-    return 'theme-light'; // Default theme
+    return "theme-light"; // Default theme
   };
 
   // Define applyTheme function
-  const applyTheme = (newTheme: 'theme-light' | 'dark' | 'system') => {
-    const isDark = newTheme === 'dark' || (newTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('theme', isDark ? 'dark' : 'theme-light');
+  const applyTheme = (newTheme: "theme-light" | "dark" | "system") => {
+    const isDark =
+      newTheme === "dark" ||
+      (newTheme === "system" &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+    if (typeof window !== "undefined") {
+      localStorage.setItem("theme", isDark ? "dark" : "theme-light");
     }
   };
 
@@ -31,27 +40,27 @@ export function ModeToggle() {
     applyTheme(currentTheme);
   }, []);
 
-  const handleThemeChange = (newTheme: 'theme-light' | 'dark' | 'system') => {
-    applyTheme(newTheme); 
+  const handleThemeChange = (newTheme: "theme-light" | "dark" | "system") => {
+    applyTheme(newTheme);
   };
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild >
-        <Button variant="outline" size="icon" >
+      <DropdownMenuTrigger>
+        <Button variant="outline" size="icon">
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => handleThemeChange('theme-light')}>
+        <DropdownMenuItem onClick={() => handleThemeChange("theme-light")}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => handleThemeChange('dark')}>
+        <DropdownMenuItem onClick={() => handleThemeChange("dark")}>
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => handleThemeChange('system')}>
+        <DropdownMenuItem onClick={() => handleThemeChange("system")}>
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
