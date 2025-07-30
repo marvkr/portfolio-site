@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import { MainNavigationMenu } from '@/components/MainNavigationMenu';
+import BaseHead from './base-head.astro';
 import '@/styles/globals.css'
 interface Props {
 	title: string;
@@ -17,7 +18,7 @@ const { title } = Astro.props;
 	};
 	const isDark = getThemePreference() === 'dark';
 	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
- 
+
 	if (typeof localStorage !== 'undefined') {
 		const observer = new MutationObserver(() => {
 			const isDark = document.documentElement.classList.contains('dark');
@@ -35,13 +36,8 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<ViewTransitions />	
+		<BaseHead title={title} description="Marvin Kaunda - Co-Founder & CTPO at Procureezy, Full Stack Developer & Product Designer" image='/profile-picture.webp'/>
+		<ViewTransitions />
 	</head>
 	<body>
 		<MainNavigationMenu client:load/>

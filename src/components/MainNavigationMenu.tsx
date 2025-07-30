@@ -22,9 +22,9 @@ export function MainNavigationMenu() {
   };
   return (
     <>
-      <NavigationMenu className="absolute top-10 left-1/2 max-sm:-translate-x-1/2 sm:top-16 sm:left-16 z-50">
+      <NavigationMenu className="fixed lg:absolute top-10 left-1/2 max-lg:-translate-x-1/2 lg:top-16 lg:left-16 z-50">
         <NavigationMenuList>
-          <NavigationMenuItem>
+          <NavigationMenuItem className="lg:hidden">
             <NavigationMenuLink>
               <HamburgerMenu
                 handleClick={handleClick}
@@ -33,25 +33,39 @@ export function MainNavigationMenu() {
               />
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className="max-sm:hidden">
+          <NavigationMenuItem className="max-lg:hidden">
             <NavigationMenuLink>
-              <a key="m" href="/menu" className={navigationMenuTriggerStyle()}>
-                Menu
+              <a href="/">
+                <Button variant="outline" size="sm">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline strokeLinecap="round" strokeLinejoin="round" points="9,22 9,12 15,12 15,22" />
+                  </svg>
+                </Button>
               </a>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem className="max-sm:hidden">
             <NavigationMenuLink>
-              <a key="a" href="/about" className={navigationMenuTriggerStyle()}>
-                About
+              <a key="e" href="/experience" className={navigationMenuTriggerStyle()}>
+                Experience
+              </a>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem className="max-sm:hidden">
+            <NavigationMenuLink>
+              <a key="s" href="/skills" className={navigationMenuTriggerStyle()}>
+                Skills
               </a>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink>
-              <Button className="max-sm:h-full" variant={"outline"}>
-                Book a table
-              </Button>
+              <a href="mailto:marvinkr@icloud.com">
+                <Button className="max-sm:h-full" variant={"outline"}>
+                  Contact Me
+                </Button>
+              </a>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
@@ -82,13 +96,13 @@ export function MainNavigationMenu() {
           </a>
           <a
             className="text-7xl my-4 hover:text-primary transition-colors"
-            href="/menu">
-            Menu
+            href="/experience">
+            Experience
           </a>
           <a
             className="text-7xl hover:text-primary transition-colors"
-            href="/about">
-            About
+            href="/skills">
+            Skills
           </a>
         </div>
       </div>
