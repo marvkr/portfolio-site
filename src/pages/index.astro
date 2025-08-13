@@ -4,165 +4,175 @@ import SmallCard from "@/components/SmallCard.astro";
 ---
 
 <Layout
-	title="Marvin Kaunda | Design/Product Engineer"
-	description="Co-Founder & CTPO at Procureezy. Full Stack Developer & Product Designer specializing in AI-powered solutions, user-centered design, and scalable applications."
-	image="/profile-picture.webp">
-	<div class="min-h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-7 gap-4">
-		<div class="lg:col-span-5 flex flex-col gap-4">
-			<div
-				class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top"
-				style="background-image: url('/profile-picture.webp');">
-				<!-- Image div with gradient background -->
-				<div
-					class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
-				</div>
-				<!-- Linear gradient overlay -->
-				<div
-					class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black/50 to-transparent z-10">
-				</div>
-				<!-- Main heading -->
-				<div class="absolute bottom-3 sm:bottom-5 left-5 z-20">
-					<h1 class="text-white text-2xl sm:text-7xl font-semibold mb-2">
-						Marvin Kaunda
-					</h1>
-					<p class="text-white/80 text-sm sm:text-xl font-light">
-						Co-Founder & CTPO at Procureezy
-					</p>
-					<p class="text-white/60 text-xs sm:text-lg font-light">
-						Full Stack Developer & Product Designer
-					</p>
-				</div>
-				<!-- Contact CTA -->
-				<div
-					class="flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-5 py-1 bg-background rounded-tl-2xl z-30">
-					<!-- Border mask -->
-					<svg
-						class="absolute bottom-0 -left-6 h-6 w-6 fill-background"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							fill-rule="evenodd"
-							clip-rule="evenodd"
-							d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
-					</svg>
-					<svg
-						class="absolute right-0 -top-6 h-6 w-6 fill-background"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							fill-rule="evenodd"
-							clip-rule="evenodd"
-							d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
-					</svg>
-					<!-- GitHub icon -->
-					<a
-						href="https://github.com/marvkr"
-						target="_blank"
-						class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="w-full h-full fill-foreground"
-							viewBox="0 0 24 24">
-							<path
-								d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-							></path>
-						</svg>
-					</a>
-					<!-- LinkedIn icon -->
-					<a
-						href="https://linkedin.com/in/marvinkr"
-						target="_blank"
-						class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="w-full h-full fill-foreground"
-							viewBox="0 0 24 24">
-							<path
-								d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-							></path>
-						</svg>
-					</a>
-					<!-- Email icon -->
-					<a
-						href="mailto:marvinkr@icloud.com"
-						class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="w-full h-full fill-foreground"
-							viewBox="0 0 24 24">
-							<path
-								d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
-							></path>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div
-				class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll"
-				style="background-image: var(--menu-background-image);">
-				<div class="p-4">
-					<div
-						class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
-						<h3 class="text-md font-semibold mb-4 text-primary">About Me</h3>
-						<div>
-							<p
-								class="font-caveat text-lg leading-tight text-foreground tracking-wide">
-								My fascination with technology started early—watching my dad pop
-								floppy disks into his computer 💾 and trying to imitate him
-								(sometimes with plastic cards), until he locked the drive to
-								stop my "innovations" 🔒.
-								<br />
-								<strong>
-									Since then, I've turned that curiosity into building things
-									that (hopefully) work better than my early experiments 😅:
-								</strong>
-								<br /><br />
-								- Started with a master's thesis that became a business,
-								<a
-									href="https://owaste.webflow.io"
-									target="_blank"
-									class="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-4 transition-colors"
-									>helping men try sustainable living</a
-								> 🌱.
-								<br />
-								- <a
-									href="https://cocktailanddinner.webflow.io"
-									target="_blank"
-									class="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-4 transition-colors"
-									>a marketplace
-								</a> to tackle loneliness and bring people together for private dinners
-								🍽️.
-								<br />
-								- <a
-									href="https://procureezy.com"
-									target="_blank"
-									class="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-4 transition-colors"
-									>an AI search engine for hardware engineers</a
-								> building rocket engines 🚀 and satellites 🛰️.
-								<br /><br />
-								Whether it's marketplaces, web or mobile apps, or AI tools, I love
-								creating products that make a difference and put users first.
-								<br />
-								Outside work, I'm a vegetarian, speak six languages 🌍, host dinner
-								parties 🎉, geek out over design 🎨, and stress over Formula 1 🏎️.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div
-			class="lg:col-span-2 max-sm:flex max-sm:flex-col grid grid-rows-2 gap-4">
-			<SmallCard
-				title="Experience"
-				link="/experience"
-				image="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800&h=600&fit=crop"
-			/>
-			<SmallCard
-				title="Skills"
-				link="/skills"
-				image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
-			/>
-		</div>
-	</div>
+  title="Marvin Kaunda | Design/Product Engineer"
+  description="Co-Founder & CTPO at Procureezy. Full Stack Developer & Product Designer specializing in AI-powered solutions, user-centered design, and scalable applications."
+  image="/profile-picture.webp">
+  <div class="min-h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-7 gap-4">
+    <div class="lg:col-span-5 flex flex-col gap-4">
+      <div
+        class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top"
+        style="background-image: url('/profile-picture.webp');">
+        <!-- Image div with gradient background -->
+        <div
+          class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
+        </div>
+        <!-- Linear gradient overlay -->
+        <div
+          class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black/50 to-transparent z-10">
+        </div>
+        <!-- Main heading -->
+        <div class="absolute bottom-3 sm:bottom-5 left-5 z-20">
+          <h1 class="text-white text-2xl sm:text-7xl font-semibold mb-2">
+            Marvin Kaunda
+          </h1>
+          <p class="text-white/80 text-sm sm:text-xl font-light">
+            Co-Founder & CTPO at Procureezy
+          </p>
+          <p class="text-white/60 text-xs sm:text-lg font-light">
+            Full Stack Developer & Product Designer
+          </p>
+        </div>
+        <!-- Contact CTA -->
+        <div
+          class="flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-5 py-1 bg-background rounded-tl-2xl z-30">
+          <!-- Border mask -->
+          <svg
+            class="absolute bottom-0 -left-6 h-6 w-6 fill-background"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
+          </svg>
+          <svg
+            class="absolute right-0 -top-6 h-6 w-6 fill-background"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
+          </svg>
+          <!-- GitHub icon -->
+          <a
+            href="https://github.com/marvkr"
+            target="_blank"
+            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-full h-full fill-foreground"
+              viewBox="0 0 32 32"
+              ><title>github</title><g fill="currentColor"
+                ><path
+                  d="M16,2.345c7.735,0,14,6.265,14,14-.002,6.015-3.839,11.359-9.537,13.282-.7,.14-.963-.298-.963-.665,0-.473,.018-1.978,.018-3.85,0-1.312-.437-2.152-.945-2.59,3.115-.35,6.388-1.54,6.388-6.912,0-1.54-.543-2.783-1.435-3.762,.14-.35,.63-1.785-.14-3.71,0,0-1.173-.385-3.85,1.435-1.12-.315-2.31-.472-3.5-.472s-2.38,.157-3.5,.472c-2.677-1.802-3.85-1.435-3.85-1.435-.77,1.925-.28,3.36-.14,3.71-.892,.98-1.435,2.24-1.435,3.762,0,5.355,3.255,6.563,6.37,6.913-.403,.35-.77,.963-.893,1.872-.805,.368-2.818,.963-4.077-1.155-.263-.42-1.05-1.452-2.152-1.435-1.173,.018-.472,.665,.017,.927,.595,.332,1.277,1.575,1.435,1.978,.28,.787,1.19,2.293,4.707,1.645,0,1.173,.018,2.275,.018,2.607,0,.368-.263,.787-.963,.665-5.719-1.904-9.576-7.255-9.573-13.283,0-7.735,6.265-14,14-14Z"
+                ></path></g
+              ></svg
+            >
+          </a>
+          <!-- LinkedIn icon -->
+          <a
+            href="https://linkedin.com/in/marvinkr"
+            target="_blank"
+            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-full h-full fill-foreground"
+              viewBox="0 0 32 32"
+              ><title>linkedin</title><g fill="currentColor"
+                ><path
+                  d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+                  fill-rule="evenodd"></path></g
+              ></svg
+            >
+          </a>
+          <!-- Email icon -->
+          <a
+            href="mailto:marvinkr@icloud.com"
+            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-full h-full fill-foreground"
+              viewBox="0 0 32 32"
+              ><title>envelope</title><g fill="currentColor"
+                ><path
+                  d="m16,14.882l15-7.5v-.382c0-2.206-1.794-4-4-4H5c-2.206,0-4,1.794-4,4v.382l15,7.5Z"
+                  fill="currentColor"
+                  stroke-width="0"></path><path
+                  d="m16,17.118L1,9.618v15.382c0,2.206,1.794,4,4,4h22c2.206,0,4-1.794,4-4v-15.382l-15,7.5Z"
+                  stroke-width="0"
+                  fill="currentColor"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+      <div
+        class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll"
+        style="background-image: var(--menu-background-image);">
+        <div class="p-4">
+          <div
+            class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
+            <h3 class="text-md font-semibold mb-4 text-primary">About Me</h3>
+            <div>
+              <p
+                class="font-caveat text-lg leading-tight text-foreground tracking-wide">
+                My fascination with technology started early—watching my dad pop
+                floppy disks into his computer 💾 and trying to imitate him
+                (sometimes with plastic cards), until he locked the drive to
+                stop my "innovations" 🔒.
+                <br />
+                <strong>
+                  Since then, I've turned that curiosity into building things
+                  that (hopefully) work better than my early experiments 😅:
+                </strong>
+                <br /><br />
+                - Started with a master's thesis that became a business,
+                <a
+                  href="https://owaste.webflow.io"
+                  target="_blank"
+                  class="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-4 transition-colors"
+                  >helping men try sustainable living</a
+                > 🌱.
+                <br />
+                - <a
+                  href="https://cocktailanddinner.webflow.io"
+                  target="_blank"
+                  class="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-4 transition-colors"
+                  >a marketplace
+                </a> to tackle loneliness and bring people together for private dinners
+                🍽️.
+                <br />
+                - <a
+                  href="https://procureezy.com"
+                  target="_blank"
+                  class="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-4 transition-colors"
+                  >an AI search engine for hardware engineers</a
+                > building rocket engines 🚀 and satellites 🛰️.
+                <br /><br />
+                Whether it's marketplaces, web or mobile apps, or AI tools, I love
+                creating products that make a difference and put users first.
+                <br />
+                Outside work, I'm a vegetarian, speak six languages 🌍, host dinner
+                parties 🎉, geek out over design 🎨, and stress over Formula 1 🏎️.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="lg:col-span-2 max-sm:flex max-sm:flex-col grid grid-rows-2 gap-4">
+      <SmallCard
+        title="Experience"
+        link="/experience"
+        image="/images/experience.webp"
+      />
+      <SmallCard
+        title="Skills"
+        link="/skills"
+        image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+      />
+    </div>
+  </div>
 </Layout>
