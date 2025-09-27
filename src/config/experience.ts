@@ -1,3 +1,5 @@
+import { TECHNOLOGIES, getTechArray } from "./skills";
+
 export type Project = {
   name: string;
   role: string;
@@ -26,25 +28,18 @@ export const ExperienceData: ExperienceSection[] = [
         description:
           "Procureezy.com is AI sourcing copilot for hardware engineers to tackle the thousands of hours lost in sourcing per engineer per year.",
         technologies: [
-          "Next.js",
-          "TypeScript",
-          "TailwindCSS",
+          ...getTechArray(["NEXTJS", "TYPESCRIPT", "TAILWINDCSS", "HONOJS", "DRIZZLEORM", "VERCEL", "REACT", "LANGGRAPH"]),
           "Shadcn/ui",
           "Nuqs",
-          "HonoJS",
           "OpenAPI",
           "Neon",
-          "DrizzleORM",
           "Zod",
           "Clerk",
-          "Vercel",
           "PostHog",
-          "React",
           "Bun",
           "Docker",
           "Better Auth",
           "Langfuse",
-          "LanggraphJS",
           "Vercel AI SDK",
           "Python",
         ],
@@ -65,7 +60,11 @@ export const ExperienceData: ExperienceSection[] = [
         location: "Brussels, Belgium",
         description:
           "Marketplace to rent kitchens and dining rooms of private homes",
-        technologies: ["Webflow", "JavaScript", "CSS", "Brand Design", "SEO"],
+        technologies: [
+          ...getTechArray(["REACT_NATIVE", "SWIFTUI", "NEXTJS", "WEBFLOW", "JAVASCRIPT", "CSS"]),
+          "Brand Design",
+          "SEO",
+        ],
         links: [
           "https://cocktailanddinner.webflow.io/homes",
           "https://cocktailanddinner.webflow.io/host-onboarding",
@@ -86,7 +85,7 @@ export const ExperienceData: ExperienceSection[] = [
         location: "Remote",
         description:
           "Designed and developed websites for early-stage startups, SMEs and non-profits.",
-        technologies: ["React", "Next.js", "TailwindCSS", "Webflow", "Figma"],
+        technologies: getTechArray(["REACT", "NEXTJS", "TAILWINDCSS", "WEBFLOW", "FIGMA"]),
         links: [
           "https://flowsstudio.webflow.io/",
           "https://contra.com/marvin_kaunda/work",
@@ -109,7 +108,12 @@ export const ExperienceData: ExperienceSection[] = [
         location: "Brussels, Belgium",
         description:
           "An eco-friendly e-commerce for sustainable men's products. (built as part of my master thesis)",
-        technologies: ["E-commerce", "UX Design", "Analytics", "Webflow"],
+        technologies: [
+          ...getTechArray(["WEBFLOW"]),
+          "E-commerce",
+          "UX Design",
+          "Analytics",
+        ],
         links: ["https://owaste.webflow.io/"],
         achievements: [
           "Designed and developed the e-commerce site: https://owaste.webflow.io/",

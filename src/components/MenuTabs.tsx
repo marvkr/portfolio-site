@@ -2,6 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExperienceData } from "@/config/experience";
+import { TechnologyBadge } from "@/components/TechnologyBadge";
 
 export function MenuTabs() {
   return (
@@ -56,9 +57,7 @@ export function MenuTabs() {
                     <h4 className="text-sm font-semibold mb-2 text-primary">Technologies:</h4>
                     <div className="flex flex-wrap gap-1">
                       {project.technologies.map((tech) => (
-                        <span key={tech} className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded">
-                          {tech}
-                        </span>
+                        <TechnologyBadge key={tech} technology={tech} />
                       ))}
                     </div>
                   </div>
