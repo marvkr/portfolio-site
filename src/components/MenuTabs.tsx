@@ -4,6 +4,29 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExperienceData } from "@/config/experience";
 import { TechnologyBadge } from "@/components/TechnologyBadge";
 
+// Helper function to parse text and convert URLs to links
+function parseTextWithLinks(text: string): React.ReactNode[] {
+  const urlRegex = /(https?:\/\/[^\s,]+)/g;
+  const parts = text.split(urlRegex);
+
+  return parts.map((part, index) => {
+    if (part.match(urlRegex)) {
+      return (
+        <a
+          key={index}
+          href={part}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-yellow-500 hover:text-yellow-400 hover:underline"
+        >
+          {part}
+        </a>
+      );
+    }
+    return part;
+  });
+}
+
 export function MenuTabs() {
   return (
     <>
@@ -46,7 +69,7 @@ export function MenuTabs() {
                         {project.achievements.map((achievement, index) => (
                           <li key={index} className="text-xs text-muted-foreground flex items-start">
                             <span className="mr-2 text-primary">•</span>
-                            {achievement}
+                            <span>{parseTextWithLinks(achievement)}</span>
                           </li>
                         ))}
                       </ul>
