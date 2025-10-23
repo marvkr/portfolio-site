@@ -50,7 +50,7 @@ export const ExperienceData: ExperienceSection[] = [
         ],
         achievements: [
           "Designed, developed and iterated with beta testers to build a procurement SaaS tool (platform.procureezy.com) to help hardware engineers collaborate. Also led demo calls to sell the product to potential leads.",
-          "Designed and developed an AI search engine (search.procureezy.com) used by +50 hardware engineers to source hardware parts efficiently.",
+          "Designed and developed an AI search engine (search.procureezy.com) used by hardware engineers at space companies to source hardware parts efficiently.",
         ],
       },
       {
