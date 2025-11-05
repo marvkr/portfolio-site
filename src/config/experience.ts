@@ -23,13 +23,12 @@ export const ExperienceData: ExperienceSection[] = [
       {
         name: "ODF",
         role: "Product Engineer",
-        period: "October 2024 – Present",
+        period: "November 2024 – Present",
         location: "Remote",
         description:
           "Building innovative products at ODF.",
         technologies: getTechArray(["NEXTJS", "TYPESCRIPT", "TAILWINDCSS", "REACT"]),
         links: ["https://joinodf.com"],
-        achievements: [],
       },
       {
         name: "Procureezy",

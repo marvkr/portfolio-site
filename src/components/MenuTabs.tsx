@@ -62,7 +62,7 @@ export function MenuTabs() {
                     {project.description}
                   </p>
 
-                  {project.achievements && (
+                  {project.achievements && project.achievements.length > 0 && (
                     <div className="mb-4">
                       <h4 className="text-sm font-semibold mb-2 text-primary">Key Achievements:</h4>
                       <ul className="space-y-3">
