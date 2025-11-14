@@ -21,16 +21,6 @@ export const ExperienceData: ExperienceSection[] = [
     title: "WORK EXPERIENCE",
     projects: [
       {
-        name: "ODF",
-        role: "Product Engineer",
-        period: "November 2024 – Present",
-        location: "Remote",
-        description:
-          "Building innovative products at ODF.",
-        technologies: getTechArray(["NEXTJS", "TYPESCRIPT", "TAILWINDCSS", "REACT"]),
-        links: ["https://joinodf.com"],
-      },
-      {
         name: "Procureezy",
         role: "Co-Founder & CTPO",
         period: "April 2024 – September 2024",
@@ -91,7 +81,7 @@ export const ExperienceData: ExperienceSection[] = [
       {
         name: "FlowsStudio",
         role: "Freelance",
-        period: "Oct. 2021 - April 2024",
+        period: "Oct. 2021 - Present",
         location: "Remote",
         description:
           "Designed and developed websites for early-stage startups, SMEs and non-profits.",
