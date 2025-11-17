@@ -11,8 +11,8 @@ import { TECHNOLOGIES, CORE_SKILLS, LANGUAGES } from "@/config/skills";
         class="lg:min-h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-2 gap-4 overflow-hidden">
         <div class="flex flex-col gap-4">
             <div
-                class="relative h-40 lg:h-full overflow-hidden rounded-3xl bg-cover bg-center"
-                style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop');">
+                class="relative h-40 lg:h-full overflow-hidden rounded-3xl bg-cover bg-center animate-fade-in"
+                style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop'); animation-delay: 0ms;">
                 <div
                     class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/30 via-black/20 to-black/40 z-0">
                 </div>
@@ -22,12 +22,12 @@ import { TECHNOLOGIES, CORE_SKILLS, LANGUAGES } from "@/config/skills";
                 <!-- H1 element for the page title -->
                 <h1
                     class="absolute bottom-3 lg:bottom-5 left-5 text-white text-3xl lg:text-7xl font-bold z-20">
-                    Skills
+                    <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Skills</span>
                 </h1>
             </div>
         </div>
         <div class="relative grid grid-cols-1 gap-4">
-            <div class="rounded-xl border border-border p-4">
+            <div class="rounded-xl border border-border p-4 animate-fade-in" style="animation-delay: 160ms;">
                 <h3 class="text-lg font-semibold mb-4 text-primary">
                     Technologies
                 </h3>
@@ -228,7 +228,7 @@ import { TECHNOLOGIES, CORE_SKILLS, LANGUAGES } from "@/config/skills";
                 </div>
             </div>
 
-            <div class="rounded-xl border border-border p-4">
+            <div class="rounded-xl border border-border p-4 animate-fade-in" style="animation-delay: 240ms;">
                 <h3 class="text-lg font-semibold mb-4 text-primary">
                     Core Skills
                 </h3>
@@ -268,7 +268,7 @@ import { TECHNOLOGIES, CORE_SKILLS, LANGUAGES } from "@/config/skills";
                 </div>
             </div>
 
-            <div class="rounded-xl border border-border p-4">
+            <div class="rounded-xl border border-border p-4 animate-fade-in" style="animation-delay: 320ms;">
                 <h3 class="text-lg font-semibold mb-4 text-primary">
                     Languages
                 </h3>

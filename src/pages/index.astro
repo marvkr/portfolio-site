@@ -10,8 +10,8 @@ import SmallCard from "@/components/SmallCard.astro";
   <div class="min-h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-7 gap-4">
     <div class="lg:col-span-5 flex flex-col gap-4">
       <div
-        class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top"
-        style="background-image: url('/profile-picture.webp');">
+        class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top animate-fade-in"
+        style="background-image: url('/profile-picture.webp'); animation-delay: 0ms;">
         <!-- Image div with gradient background -->
         <div
           class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
@@ -23,11 +23,11 @@ import SmallCard from "@/components/SmallCard.astro";
         <!-- Main heading -->
         <div class="absolute bottom-3 sm:bottom-5 left-5 z-20">
           <h1 class="text-white text-2xl sm:text-7xl font-semibold mb-2">
-            <span class="animate-fade-in inline-block" style="animation-delay: 0ms;">Marvin</span>
+            <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Marvin</span>
             <span> </span>
-            <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Kaunda</span>
+            <span class="animate-fade-in inline-block" style="animation-delay: 160ms;">Kaunda</span>
           </h1>
-          <p class="text-white/80 text-sm sm:text-xl font-light animate-fade-in" style="animation-delay: 160ms;">
+          <p class="text-white/80 text-sm sm:text-xl font-light animate-fade-in" style="animation-delay: 240ms;">
             Freelance Design Engineer
           </p>
         </div>
@@ -58,7 +58,7 @@ import SmallCard from "@/components/SmallCard.astro";
             href="https://github.com/marvkr"
             target="_blank"
             class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-            style="animation-delay: 240ms;">
+            style="animation-delay: 320ms;">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-full h-full fill-foreground"
@@ -75,7 +75,7 @@ import SmallCard from "@/components/SmallCard.astro";
             href="https://linkedin.com/in/marvinkr"
             target="_blank"
             class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-            style="animation-delay: 320ms;">
+            style="animation-delay: 400ms;">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-full h-full fill-foreground"
@@ -91,7 +91,7 @@ import SmallCard from "@/components/SmallCard.astro";
           <a
             href="mailto:marvinkr@icloud.com"
             class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-            style="animation-delay: 400ms;">
+            style="animation-delay: 480ms;">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-full h-full fill-foreground"
@@ -110,15 +110,20 @@ import SmallCard from "@/components/SmallCard.astro";
         </div>
       </div>
       <div
-        class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll"
-        style="background-image: var(--menu-background-image);">
+        class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll animate-fade-in"
+        style="background-image: var(--menu-background-image); animation-delay: 560ms;">
         <div class="p-4">
           <div
             class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
-            <h3 class="text-md font-semibold mb-4 text-primary">About Me</h3>
+            <h3 class="text-md font-semibold mb-4 text-primary">
+              <span class="animate-fade-in inline-block" style="animation-delay: 640ms;">About</span>
+              <span> </span>
+              <span class="animate-fade-in inline-block" style="animation-delay: 720ms;">Me</span>
+            </h3>
             <div>
               <p
-                class="font-caveat text-lg leading-tight text-foreground tracking-wide">
+                class="font-caveat text-lg leading-tight text-foreground tracking-wide animate-fade-in"
+                style="animation-delay: 800ms;">
                 My fascination with technology started early. 👶🏾
                 <br /><br />
                 Watching my dad pop floppy disks into his computer 💾 , and me trying
@@ -152,16 +157,20 @@ import SmallCard from "@/components/SmallCard.astro";
     </div>
     <div
       class="lg:col-span-2 max-sm:flex max-sm:flex-col grid grid-rows-2 gap-4">
-      <SmallCard
-        title="Experience"
-        link="/experience"
-        image="/images/experience.webp"
-      />
-      <SmallCard
-        title="Skills"
-        link="/skills"
-        image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
-      />
+      <div class="animate-fade-in" style="animation-delay: 880ms;">
+        <SmallCard
+          title="Experience"
+          link="/experience"
+          image="/images/experience.webp"
+        />
+      </div>
+      <div class="animate-fade-in" style="animation-delay: 960ms;">
+        <SmallCard
+          title="Skills"
+          link="/skills"
+          image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+        />
+      </div>
     </div>
   </div>
 </Layout>
