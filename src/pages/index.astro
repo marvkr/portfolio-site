@@ -7,169 +7,171 @@ import SmallCard from "@/components/SmallCard.astro";
   title="Marvin Kaunda | Design/Product Engineer"
   description="Freelance Full Stack Developer & Product Designer specializing in AI-powered solutions, user-centered design, and scalable applications."
   image="/profile-picture.webp">
-  <div class="min-h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-7 gap-4">
-    <div class="lg:col-span-5 flex flex-col gap-4">
+  <div class="min-h-screen px-6 py-6 flex flex-col lg:grid lg:grid-cols-7 lg:grid-rows-2 gap-4">
+    <!-- Profile Image - First on mobile, left column row 1 on desktop -->
+    <div
+      class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top animate-fade-in lg:col-span-5 lg:row-start-1"
+      style="background-image: url('/profile-picture.webp'); animation-delay: 0ms;">
+      <!-- Image div with gradient background -->
       <div
-        class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top animate-fade-in"
-        style="background-image: url('/profile-picture.webp'); animation-delay: 0ms;">
-        <!-- Image div with gradient background -->
-        <div
-          class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
-        </div>
-        <!-- Linear gradient overlay -->
-        <div
-          class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black/50 to-transparent z-10">
-        </div>
-        <!-- Main heading -->
-        <div class="absolute bottom-3 sm:bottom-5 left-5 z-20">
-          <h1 class="text-white text-2xl sm:text-7xl font-semibold mb-2">
-            <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Marvin</span>
-            <span> </span>
-            <span class="animate-fade-in inline-block" style="animation-delay: 160ms;">Kaunda</span>
-          </h1>
-          <p class="text-white/80 text-sm sm:text-xl font-light animate-fade-in" style="animation-delay: 240ms;">
-            Freelance Design Engineer
-          </p>
-        </div>
-        <!-- Contact CTA -->
-        <div
-          class="flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-5 py-1 bg-background rounded-tl-2xl z-30">
-          <!-- Border mask -->
-          <svg
-            class="absolute bottom-0 -left-6 h-6 w-6 fill-background"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
-          </svg>
-          <svg
-            class="absolute right-0 -top-6 h-6 w-6 fill-background"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
-          </svg>
-          <!-- GitHub icon -->
-          <a
-            href="https://github.com/marvkr"
-            target="_blank"
-            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-            style="animation-delay: 320ms;">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-full h-full fill-foreground"
-              viewBox="0 0 32 32"
-              ><title>github</title><g fill="currentColor"
-                ><path
-                  d="M16,2.345c7.735,0,14,6.265,14,14-.002,6.015-3.839,11.359-9.537,13.282-.7,.14-.963-.298-.963-.665,0-.473,.018-1.978,.018-3.85,0-1.312-.437-2.152-.945-2.59,3.115-.35,6.388-1.54,6.388-6.912,0-1.54-.543-2.783-1.435-3.762,.14-.35,.63-1.785-.14-3.71,0,0-1.173-.385-3.85,1.435-1.12-.315-2.31-.472-3.5-.472s-2.38,.157-3.5,.472c-2.677-1.802-3.85-1.435-3.85-1.435-.77,1.925-.28,3.36-.14,3.71-.892,.98-1.435,2.24-1.435,3.762,0,5.355,3.255,6.563,6.37,6.913-.403,.35-.77,.963-.893,1.872-.805,.368-2.818,.963-4.077-1.155-.263-.42-1.05-1.452-2.152-1.435-1.173,.018-.472,.665,.017,.927,.595,.332,1.277,1.575,1.435,1.978,.28,.787,1.19,2.293,4.707,1.645,0,1.173,.018,2.275,.018,2.607,0,.368-.263,.787-.963,.665-5.719-1.904-9.576-7.255-9.573-13.283,0-7.735,6.265-14,14-14Z"
-                ></path></g
-              ></svg
-            >
-          </a>
-          <!-- LinkedIn icon -->
-          <a
-            href="https://linkedin.com/in/marvinkr"
-            target="_blank"
-            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-            style="animation-delay: 400ms;">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-full h-full fill-foreground"
-              viewBox="0 0 32 32"
-              ><title>linkedin</title><g fill="currentColor"
-                ><path
-                  d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
-                  fill-rule="evenodd"></path></g
-              ></svg
-            >
-          </a>
-          <!-- Email icon -->
-          <a
-            href="mailto:marvinkr@icloud.com"
-            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-            style="animation-delay: 480ms;">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-full h-full fill-foreground"
-              viewBox="0 0 32 32"
-              ><title>envelope</title><g fill="currentColor"
-                ><path
-                  d="m16,14.882l15-7.5v-.382c0-2.206-1.794-4-4-4H5c-2.206,0-4,1.794-4,4v.382l15,7.5Z"
-                  fill="currentColor"
-                  stroke-width="0"></path><path
-                  d="m16,17.118L1,9.618v15.382c0,2.206,1.794,4,4,4h22c2.206,0,4-1.794,4-4v-15.382l-15,7.5Z"
-                  stroke-width="0"
-                  fill="currentColor"></path></g
-              ></svg
-            >
-          </a>
-        </div>
+        class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
       </div>
+      <!-- Linear gradient overlay -->
       <div
-        class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll animate-fade-in"
-        style="background-image: var(--menu-background-image); animation-delay: 560ms;">
-        <div class="p-4">
-          <div
-            class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
-            <h3 class="text-md font-semibold mb-4 text-primary">
-              <span class="animate-fade-in inline-block" style="animation-delay: 640ms;">About</span>
-              <span> </span>
-              <span class="animate-fade-in inline-block" style="animation-delay: 720ms;">Me</span>
-            </h3>
-            <div>
-              <p
-                class="font-caveat text-lg leading-tight text-foreground tracking-wide animate-fade-in"
-                style="animation-delay: 800ms;">
-                My fascination with technology started early. 👶🏾
-                <br /><br />
-                Watching my dad pop floppy disks into his computer 💾 , and me trying
-                to imitate him (sometimes with random plastic cards 💳), until he
-                locked the drive to stop my early "experiments". 🔒
-                <br /><br />
-                Since then, I've turned that curiosity into building things that
-                (hopefully) work better than my early experiments 😅 :
-                <br /><br />
-                - Started with a master's thesis that became a business, <a href="https://owaste.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">helping men
-                try sustainable living</a> 🌱.
-                <br />
-                - a <a href="https://cocktailanddinner.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">marketplace</a> to tackle loneliness and bring people together for
-                private dinners 🍽️.
-                <br />
-                - an <a href="https://search.procureezy.com" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">AI search engine</a> for hardware engineers building rocket engines
-                🚀 and satellites 🛰️.
-                <br /><br />
-                Whether it's marketplaces, web/mobile apps, or AI tools, I love
-                creating products crazy enough to make a difference and that put users
-                first.
-                <br /><br />
-                Outside work, I'm a Pescetarian, speak 5 languages 🌍, love to make
-                dinner, geek out over design in both digital & physical form 🎨, and
-                lastly ... stress over Formula 1 🏎️.
-              </p>
-            </div>
-          </div>
-        </div>
+        class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black/50 to-transparent z-10">
+      </div>
+      <!-- Main heading -->
+      <div class="absolute bottom-3 sm:bottom-5 left-5 z-20">
+        <h1 class="text-white text-2xl sm:text-7xl font-semibold mb-2">
+          <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Marvin</span>
+          <span> </span>
+          <span class="animate-fade-in inline-block" style="animation-delay: 160ms;">Kaunda</span>
+        </h1>
+        <p class="text-white/80 text-sm sm:text-xl font-light animate-fade-in" style="animation-delay: 240ms;">
+          Freelance Design Engineer
+        </p>
+      </div>
+      <!-- Contact CTA -->
+      <div
+        class="flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-5 py-1 bg-background rounded-tl-2xl z-30">
+        <!-- Border mask -->
+        <svg
+          class="absolute bottom-0 -left-6 h-6 w-6 fill-background"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
+        </svg>
+        <svg
+          class="absolute right-0 -top-6 h-6 w-6 fill-background"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24 24V0C24 13.2549 13.2549 24 0 24H24Z"></path>
+        </svg>
+        <!-- GitHub icon -->
+        <a
+          href="https://github.com/marvkr"
+          target="_blank"
+          class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+          style="animation-delay: 320ms;">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-full h-full fill-foreground"
+            viewBox="0 0 32 32"
+            ><title>github</title><g fill="currentColor"
+              ><path
+                d="M16,2.345c7.735,0,14,6.265,14,14-.002,6.015-3.839,11.359-9.537,13.282-.7,.14-.963-.298-.963-.665,0-.473,.018-1.978,.018-3.85,0-1.312-.437-2.152-.945-2.59,3.115-.35,6.388-1.54,6.388-6.912,0-1.54-.543-2.783-1.435-3.762,.14-.35,.63-1.785-.14-3.71,0,0-1.173-.385-3.85,1.435-1.12-.315-2.31-.472-3.5-.472s-2.38,.157-3.5,.472c-2.677-1.802-3.85-1.435-3.85-1.435-.77,1.925-.28,3.36-.14,3.71-.892,.98-1.435,2.24-1.435,3.762,0,5.355,3.255,6.563,6.37,6.913-.403,.35-.77,.963-.893,1.872-.805,.368-2.818,.963-4.077-1.155-.263-.42-1.05-1.452-2.152-1.435-1.173,.018-.472,.665,.017,.927,.595,.332,1.277,1.575,1.435,1.978,.28,.787,1.19,2.293,4.707,1.645,0,1.173,.018,2.275,.018,2.607,0,.368-.263,.787-.963,.665-5.719-1.904-9.576-7.255-9.573-13.283,0-7.735,6.265-14,14-14Z"
+              ></path></g
+            ></svg
+          >
+        </a>
+        <!-- LinkedIn icon -->
+        <a
+          href="https://linkedin.com/in/marvinkr"
+          target="_blank"
+          class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+          style="animation-delay: 400ms;">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-full h-full fill-foreground"
+            viewBox="0 0 32 32"
+            ><title>linkedin</title><g fill="currentColor"
+              ><path
+                d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+                fill-rule="evenodd"></path></g
+            ></svg
+          >
+        </a>
+        <!-- Email icon -->
+        <a
+          href="mailto:marvinkr@icloud.com"
+          class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+          style="animation-delay: 480ms;">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-full h-full fill-foreground"
+            viewBox="0 0 32 32"
+            ><title>envelope</title><g fill="currentColor"
+              ><path
+                d="m16,14.882l15-7.5v-.382c0-2.206-1.794-4-4-4H5c-2.206,0-4,1.794-4,4v.382l15,7.5Z"
+                fill="currentColor"
+                stroke-width="0"></path><path
+                d="m16,17.118L1,9.618v15.382c0,2.206,1.794,4,4,4h22c2.206,0,4-1.794,4-4v-15.382l-15,7.5Z"
+                stroke-width="0"
+                fill="currentColor"></path></g
+            ></svg
+          >
+        </a>
       </div>
     </div>
+
+    <!-- Experience Card - Second on mobile, right column row 1 on desktop -->
+    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-1 lg:col-start-6" style="animation-delay: 320ms;">
+      <SmallCard
+        title="Experience"
+        link="/experience"
+        image="/images/experience.webp"
+      />
+    </div>
+
+    <!-- Skills Card - Third on mobile, right column row 2 on desktop -->
+    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-2 lg:col-start-6" style="animation-delay: 400ms;">
+      <SmallCard
+        title="Skills"
+        link="/skills"
+        image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+      />
+    </div>
+
+    <!-- About Me - Fourth on mobile, left column row 2 on desktop -->
     <div
-      class="lg:col-span-2 flex flex-col lg:grid lg:grid-rows-2 gap-4 lg:h-full">
-      <div class="h-full animate-fade-in" style="animation-delay: 880ms;">
-        <SmallCard
-          title="Experience"
-          link="/experience"
-          image="/images/experience.webp"
-        />
-      </div>
-      <div class="h-full animate-fade-in" style="animation-delay: 960ms;">
-        <SmallCard
-          title="Skills"
-          link="/skills"
-          image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
-        />
+      class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll animate-fade-in lg:col-span-5 lg:row-start-2 lg:col-start-1"
+      style="background-image: var(--menu-background-image); animation-delay: 480ms;">
+      <div class="p-4">
+        <div
+          class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
+          <h3 class="text-md font-semibold mb-4 text-primary">
+            <span class="animate-fade-in inline-block" style="animation-delay: 560ms;">About</span>
+            <span> </span>
+            <span class="animate-fade-in inline-block" style="animation-delay: 640ms;">Me</span>
+          </h3>
+          <div>
+            <p
+              class="font-caveat text-lg leading-tight text-foreground tracking-wide animate-fade-in"
+              style="animation-delay: 720ms;">
+              My fascination with technology started early. 👶🏾
+              <br /><br />
+              Watching my dad pop floppy disks into his computer 💾 , and me trying
+              to imitate him (sometimes with random plastic cards 💳), until he
+              locked the drive to stop my early "experiments". 🔒
+              <br /><br />
+              Since then, I've turned that curiosity into building things that
+              (hopefully) work better than my early experiments 😅 :
+              <br /><br />
+              - Started with a master's thesis that became a business, <a href="https://owaste.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">helping men
+              try sustainable living</a> 🌱.
+              <br />
+              - a <a href="https://cocktailanddinner.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">marketplace</a> to tackle loneliness and bring people together for
+              private dinners 🍽️.
+              <br />
+              - an <a href="https://search.procureezy.com" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">AI search engine</a> for hardware engineers building rocket engines
+              🚀 and satellites 🛰️.
+              <br /><br />
+              Whether it's marketplaces, web/mobile apps, or AI tools, I love
+              creating products crazy enough to make a difference and that put users
+              first.
+              <br /><br />
+              Outside work, I'm a Pescetarian, speak 5 languages 🌍, love to make
+              dinner, geek out over design in both digital & physical form 🎨, and
+              lastly ... stress over Formula 1 🏎️.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
