@@ -11,7 +11,7 @@ import SmallCard from "@/components/SmallCard.astro";
     <!-- Profile Image - First on mobile, left column row 1 on desktop -->
     <div
       class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top animate-fade-in lg:col-span-5 lg:row-start-1"
-      style="background-image: url('/profile-picture.webp'); animation-delay: 0ms;">
+      style="background-image: url('/profile-picture.webp');">
       <!-- Image div with gradient background -->
       <div
         class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
@@ -111,7 +111,7 @@ import SmallCard from "@/components/SmallCard.astro";
     </div>
 
     <!-- Experience Card - Second on mobile, right column row 1 on desktop -->
-    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-1 lg:col-start-6" style="animation-delay: 320ms;">
+    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-1 lg:col-start-6">
       <SmallCard
         title="Experience"
         link="/experience"
@@ -120,7 +120,7 @@ import SmallCard from "@/components/SmallCard.astro";
     </div>
 
     <!-- Skills Card - Third on mobile, right column row 2 on desktop -->
-    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-2 lg:col-start-6" style="animation-delay: 400ms;">
+    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-2 lg:col-start-6">
       <SmallCard
         title="Skills"
         link="/skills"
@@ -131,7 +131,7 @@ import SmallCard from "@/components/SmallCard.astro";
     <!-- About Me - Fourth on mobile, left column row 2 on desktop -->
     <div
       class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll animate-fade-in lg:col-span-5 lg:row-start-2 lg:col-start-1"
-      style="background-image: var(--menu-background-image); animation-delay: 480ms;">
+      style="background-image: var(--menu-background-image);">
       <div class="p-4">
         <div
           class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
