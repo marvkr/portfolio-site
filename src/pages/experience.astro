@@ -11,8 +11,8 @@ import Layout from "@/layouts/Layout.astro";
     class="lg:h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-2 gap-4 overflow-hidden">
     <div class="flex flex-col gap-4">
       <div
-        class="sticky top-0 h-80 lg:h-full overflow-hidden rounded-3xl bg-cover bg-center"
-        style="background-image: url('/images/experience.webp');">
+        class="sticky top-0 h-80 lg:h-full overflow-hidden rounded-3xl bg-cover bg-center animate-fade-in"
+        style="background-image: url('/images/experience.webp'); animation-delay: 0ms;">
         <div
           class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/30 via-black/20 to-black/40 z-0">
         </div>
@@ -22,7 +22,7 @@ import Layout from "@/layouts/Layout.astro";
         <!-- H1 element for the page title -->
         <div class="absolute bottom-3 lg:bottom-5 left-5 z-20">
           <h1 class="text-white text-xl lg:text-7xl font-bold mb-2">
-            Experience
+            <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Experience</span>
           </h1>
         </div>
         <!-- Contact Actions -->
@@ -96,7 +96,8 @@ import Layout from "@/layouts/Layout.astro";
           <a
             href="https://linkedin.com/in/marvinkr"
             target="_blank"
-            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+            style="animation-delay: 160ms;">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-full h-full fill-foreground"
@@ -110,7 +111,8 @@ import Layout from "@/layouts/Layout.astro";
           <a
             href="https://github.com/marvkr"
             target="_blank"
-            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100">
+            class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+            style="animation-delay: 240ms;">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-full h-full fill-foreground"
@@ -123,25 +125,26 @@ import Layout from "@/layouts/Layout.astro";
         </div>
       </div>
       <div class="grid grid-cols-2 gap-4">
-        <div class="rounded-xl border border-border p-4 text-center">
+        <div class="rounded-xl border border-border p-4 text-center animate-fade-in" style="animation-delay: 320ms;">
           <div class="text-2xl font-bold text-primary">5</div>
           <div class="text-sm text-muted-foreground">Years Experience</div>
         </div>
-        <div class="rounded-xl border border-border p-4 text-center">
+        <div class="rounded-xl border border-border p-4 text-center animate-fade-in" style="animation-delay: 400ms;">
           <div class="text-2xl font-bold text-primary">20+</div>
           <div class="text-sm text-muted-foreground">Projects Delivered</div>
         </div>
       </div>
     </div>
     <div
-      class="relative py-4 flex flex-col gap-6 overflow-auto rounded-3xl border border-border bg-cover bg-scroll"
-      style="background-image: var(--menu-background-image);">
-      <div class="px-4">
+      class="relative py-4 flex flex-col gap-6 overflow-auto rounded-3xl border border-border bg-cover bg-scroll animate-fade-in"
+      style="background-image: var(--menu-background-image); animation-delay: 480ms;">
+      <div class="px-4 animate-fade-in" style="animation-delay: 560ms;">
         <MenuTabs client:load />
       </div>
       <div class="px-4 pb-4">
         <div
-          class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-6">
+          class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-6 animate-fade-in"
+          style="animation-delay: 640ms;">
           <h3 class="text-lg font-semibold mb-4 text-primary">Education</h3>
           <div class="space-y-4 text-sm text-muted-foreground">
             <div>
