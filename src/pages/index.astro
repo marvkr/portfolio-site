@@ -7,30 +7,30 @@ import SmallCard from "@/components/SmallCard.astro";
   title="Marvin Kaunda | Design/Product Engineer"
   description="Freelance Full Stack Developer & Product Designer specializing in AI-powered solutions, user-centered design, and scalable applications."
   image="/profile-picture.webp">
-  <div class="min-h-screen px-6 py-6 flex flex-col lg:grid lg:grid-cols-7 lg:grid-rows-[1fr_1fr] gap-4">
-    <!-- Profile Image - First on mobile, left column row 1 on desktop -->
-    <div
-      class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top animate-fade-in lg:col-span-5 lg:row-start-1"
-      style="background-image: url('/profile-picture.webp');">
-      <!-- Image div with gradient background -->
+  <div class="min-h-screen px-6 py-6 grid grid-flow-row lg:grid-cols-7 gap-4">
+    <div class="lg:col-span-5 flex flex-col gap-4">
       <div
-        class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
-      </div>
-      <!-- Linear gradient overlay -->
-      <div
-        class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black/50 to-transparent z-10">
-      </div>
-      <!-- Main heading -->
-      <div class="absolute bottom-3 sm:bottom-5 left-5 z-20">
-        <h1 class="text-white text-2xl sm:text-7xl font-semibold mb-2">
-          <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Marvin</span>
-          <span> </span>
-          <span class="animate-fade-in inline-block" style="animation-delay: 160ms;">Kaunda</span>
-        </h1>
-        <p class="text-white/80 text-sm sm:text-xl font-light animate-fade-in" style="animation-delay: 240ms;">
-          Freelance Design Engineer
-        </p>
-      </div>
+        class="relative h-96 lg:flex-1 lg:min-h-[450px] overflow-hidden rounded-3xl bg-cover bg-top"
+        style="background-image: url('/profile-picture.webp');">
+        <!-- Image div with gradient background -->
+        <div
+          class="absolute w-full h-full inset-0 bg-gradient-to-br from-black/20 via-black/10 to-black/30 z-0">
+        </div>
+        <!-- Linear gradient overlay -->
+        <div
+          class="absolute inset-x-0 bottom-0 left-0 h-60 bg-gradient-to-t from-black/50 to-transparent z-10">
+        </div>
+        <!-- Main heading -->
+        <div class="absolute bottom-3 sm:bottom-5 left-5 z-20">
+          <h1 class="text-white text-2xl sm:text-7xl font-semibold mb-2">
+            <span class="animate-fade-in inline-block" style="animation-delay: 0ms;">Marvin</span>
+            <span> </span>
+            <span class="animate-fade-in inline-block" style="animation-delay: 80ms;">Kaunda</span>
+          </h1>
+          <p class="text-white/80 text-sm sm:text-xl font-light animate-fade-in" style="animation-delay: 160ms;">
+            Freelance Design Engineer
+          </p>
+        </div>
       <!-- Contact CTA -->
       <div
         class="flex flex-row items-center gap-2 absolute right-0 bottom-0 pl-5 py-1 bg-background rounded-tl-2xl z-30">
@@ -58,7 +58,7 @@ import SmallCard from "@/components/SmallCard.astro";
           href="https://github.com/marvkr"
           target="_blank"
           class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-          style="animation-delay: 320ms;">
+          style="animation-delay: 240ms;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-full h-full fill-foreground"
@@ -75,7 +75,7 @@ import SmallCard from "@/components/SmallCard.astro";
           href="https://linkedin.com/in/marvinkr"
           target="_blank"
           class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-          style="animation-delay: 400ms;">
+          style="animation-delay: 320ms;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-full h-full fill-foreground"
@@ -91,7 +91,7 @@ import SmallCard from "@/components/SmallCard.astro";
         <a
           href="mailto:marvinkr@icloud.com"
           class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
-          style="animation-delay: 480ms;">
+          style="animation-delay: 400ms;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-full h-full fill-foreground"
@@ -108,71 +108,60 @@ import SmallCard from "@/components/SmallCard.astro";
           >
         </a>
       </div>
+      </div>
+      <div
+        class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll"
+        style="background-image: var(--menu-background-image);">
+        <div class="p-4">
+          <div
+            class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
+            <h3 class="text-md font-semibold mb-4 text-primary">About Me</h3>
+            <div>
+              <p
+                class="font-caveat text-lg leading-tight text-foreground tracking-wide">
+                My fascination with technology started early. 👶🏾
+                <br /><br />
+                Watching my dad pop floppy disks into his computer 💾 , and me trying
+                to imitate him (sometimes with random plastic cards 💳), until he
+                locked the drive to stop my early "experiments". 🔒
+                <br /><br />
+                Since then, I've turned that curiosity into building things that
+                (hopefully) work better than my early experiments 😅 :
+                <br /><br />
+                - Started with a master's thesis that became a business, <a href="https://owaste.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">helping men
+                try sustainable living</a> 🌱.
+                <br />
+                - a <a href="https://cocktailanddinner.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">marketplace</a> to tackle loneliness and bring people together for
+                private dinners 🍽️.
+                <br />
+                - an <a href="https://search.procureezy.com" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">AI search engine</a> for hardware engineers building rocket engines
+                🚀 and satellites 🛰️.
+                <br /><br />
+                Whether it's marketplaces, web/mobile apps, or AI tools, I love
+                creating products crazy enough to make a difference and that put users
+                first.
+                <br /><br />
+                Outside work, I'm a Pescetarian, speak 5 languages 🌍, love to make
+                dinner, geek out over design in both digital & physical form 🎨, and
+                lastly ... stress over Formula 1 🏎️.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Experience Card - Second on mobile, right column row 1 on desktop -->
-    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-1 lg:col-start-6">
+    <div
+      class="lg:col-span-2 max-sm:flex max-sm:flex-col grid grid-rows-2 gap-4">
       <SmallCard
         title="Experience"
         link="/experience"
         image="/images/experience.webp"
       />
-    </div>
-
-    <!-- Skills Card - Third on mobile, right column row 2 on desktop -->
-    <div class="h-full animate-fade-in lg:col-span-2 lg:row-start-2 lg:col-start-6">
       <SmallCard
         title="Skills"
         link="/skills"
         image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
       />
-    </div>
-
-    <!-- About Me - Fourth on mobile, left column row 2 on desktop -->
-    <div
-      class="relative flex flex-col overflow-auto rounded-3xl border border-border bg-cover bg-scroll animate-fade-in lg:col-span-5 lg:row-start-2 lg:col-start-1"
-      style="background-image: var(--menu-background-image);">
-      <div class="p-4">
-        <div
-          class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-5">
-          <h3 class="text-md font-semibold mb-4 text-primary">
-            <span class="animate-fade-in inline-block" style="animation-delay: 560ms;">About</span>
-            <span> </span>
-            <span class="animate-fade-in inline-block" style="animation-delay: 640ms;">Me</span>
-          </h3>
-          <div>
-            <p
-              class="font-caveat text-lg leading-tight text-foreground tracking-wide animate-fade-in"
-              style="animation-delay: 720ms;">
-              My fascination with technology started early. 👶🏾
-              <br /><br />
-              Watching my dad pop floppy disks into his computer 💾 , and me trying
-              to imitate him (sometimes with random plastic cards 💳), until he
-              locked the drive to stop my early "experiments". 🔒
-              <br /><br />
-              Since then, I've turned that curiosity into building things that
-              (hopefully) work better than my early experiments 😅 :
-              <br /><br />
-              - Started with a master's thesis that became a business, <a href="https://owaste.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">helping men
-              try sustainable living</a> 🌱.
-              <br />
-              - a <a href="https://cocktailanddinner.webflow.io" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">marketplace</a> to tackle loneliness and bring people together for
-              private dinners 🍽️.
-              <br />
-              - an <a href="https://search.procureezy.com" target="_blank" class="text-yellow-500 underline decoration-dotted hover:text-yellow-400">AI search engine</a> for hardware engineers building rocket engines
-              🚀 and satellites 🛰️.
-              <br /><br />
-              Whether it's marketplaces, web/mobile apps, or AI tools, I love
-              creating products crazy enough to make a difference and that put users
-              first.
-              <br /><br />
-              Outside work, I'm a Pescetarian, speak 5 languages 🌍, love to make
-              dinner, geek out over design in both digital & physical form 🎨, and
-              lastly ... stress over Formula 1 🏎️.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </Layout>
