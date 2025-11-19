@@ -68,7 +68,7 @@ export function MainNavigationMenu() {
   };
   return (
     <>
-      <NavigationMenu className="fixed lg:absolute top-10 left-1/2 max-lg:-translate-x-1/2 lg:top-16 lg:left-16 z-50 animate-fade-in" style={{ animationDelay: '2000ms' }}>
+      <NavigationMenu className="fixed lg:absolute top-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-16 lg:left-16 z-50 animate-fade-in" style={{ animationDelay: '2000ms' }}>
         <NavigationMenuList>
           <NavigationMenuItem className="lg:hidden">
             <NavigationMenuLink>
