@@ -18,6 +18,7 @@ import { HamburgerMenu } from "./HamburgerMenu";
 export function MainNavigationMenu() {
   const [isOpen, setOpen] = React.useState(false);
   const [isDark, setIsDark] = React.useState(false);
+  const [shouldAnimate, setShouldAnimate] = React.useState(false);
 
   // Define getThemePreference function
   const getThemePreference = () => {
@@ -50,6 +51,15 @@ export function MainNavigationMenu() {
     const currentTheme = getThemePreference();
     applyTheme(currentTheme);
 
+    // Check if we should animate (only on homepage and first visit)
+    const isHomepage = window.location.pathname === "/";
+    const hasAnimated = sessionStorage.getItem("navbarAnimated");
+
+    if (isHomepage && !hasAnimated) {
+      setShouldAnimate(true);
+      sessionStorage.setItem("navbarAnimated", "true");
+    }
+
     // Listen for system theme changes
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = (e: MediaQueryListEvent) => {
@@ -68,7 +78,7 @@ export function MainNavigationMenu() {
   };
   return (
     <>
-      <NavigationMenu className="fixed lg:absolute top-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-16 lg:left-16 z-50 animate-fade-in" style={{ animationDelay: '2000ms' }}>
+      <NavigationMenu className={`fixed lg:absolute top-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-16 lg:left-16 z-50 ${shouldAnimate ? 'animate-navbar-fade-in' : ''}`} style={shouldAnimate ? { animationDelay: '2000ms' } : {}}>
         <NavigationMenuList>
           <NavigationMenuItem className="lg:hidden">
             <NavigationMenuLink>
