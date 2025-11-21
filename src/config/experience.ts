@@ -44,13 +44,11 @@ export const ExperienceData: ExperienceSection[] = [
           "Python",
         ],
         links: [
-          "https://procureezy.com",
+          "https://procureezy.webflow.io/",
           "https://platform.procureezy.com",
-          "https://search.procureezy.com",
         ],
         achievements: [
           "Designed, developed and iterated with beta testers to build a procurement SaaS tool (platform.procureezy.com) to help hardware engineers collaborate. Also led demo calls to sell the product to potential leads.",
-          "Designed and developed an AI search engine (search.procureezy.com) used by hardware engineers at space companies to source hardware parts efficiently.",
         ],
       },
       {
