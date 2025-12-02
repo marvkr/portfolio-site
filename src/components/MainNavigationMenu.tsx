@@ -56,8 +56,11 @@ export function MainNavigationMenu() {
     const hasAnimated = sessionStorage.getItem("navbarAnimated");
 
     if (isHomepage && !hasAnimated) {
-      setShouldAnimate(true);
-      sessionStorage.setItem("navbarAnimated", "true");
+      // Delay setting shouldAnimate to prevent initial flash
+      setTimeout(() => {
+        setShouldAnimate(true);
+        sessionStorage.setItem("navbarAnimated", "true");
+      }, 50);
     }
 
     // Listen for system theme changes
@@ -78,7 +81,10 @@ export function MainNavigationMenu() {
   };
   return (
     <>
-      <NavigationMenu className={`fixed lg:absolute top-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-16 lg:left-16 z-50 ${shouldAnimate ? 'animate-navbar-fade-in' : ''}`} style={shouldAnimate ? { animationDelay: '2000ms' } : {}}>
+      <NavigationMenu
+        className={`fixed lg:absolute top-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-16 lg:left-16 z-50 ${shouldAnimate ? 'animate-navbar-fade-in' : 'opacity-0'}`}
+        style={shouldAnimate ? { animationDelay: '2000ms' } : undefined}
+      >
         <NavigationMenuList>
           <NavigationMenuItem className="lg:hidden">
             <NavigationMenuLink>
