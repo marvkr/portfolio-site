@@ -92,8 +92,10 @@ export function MenuTabs() {
                         {project.links.map((link, index) => (
                           <a key={index} href={link} target="_blank" rel="noopener noreferrer"
                              className="text-xs text-primary hover:underline bg-primary/10 px-2 py-1 rounded">
-                            {(project.name === 'CocktailAndDinner' || link.includes('contra.com'))
-                              ? link.replace('https://', '') 
+                            {link.includes('web.archive.org') && link.includes('procureezy.com')
+                              ? 'procureezy.com'
+                              : (project.name === 'CocktailAndDinner' || link.includes('contra.com'))
+                              ? link.replace('https://', '')
                               : link.replace('https://', '').split('/')[0]
                             }
                           </a>
