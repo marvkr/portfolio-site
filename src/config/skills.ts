@@ -40,10 +40,10 @@ export const TECHNOLOGIES = {
 
 // Core skills constants
 export const CORE_SKILLS = [
-  "Full Stack Dev",
-  "Database Mgmt",
+  "Full Stack Development",
+  "Database Management",
   "AI Development",
-  "Mobile Dev",
+  "Mobile Development",
   "UI/UX Design",
   "Brand Design",
   "Sales Automation",

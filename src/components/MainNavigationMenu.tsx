@@ -82,7 +82,7 @@ export function MainNavigationMenu() {
   return (
     <>
       <NavigationMenu
-        className={`fixed lg:absolute top-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-16 lg:left-16 z-50 ${shouldAnimate ? 'animate-navbar-fade-in' : 'opacity-0'}`}
+        className={`fixed lg:absolute top-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-16 lg:left-16 z-50 ${shouldAnimate ? 'animate-navbar-fade-in' : ''}`}
         style={shouldAnimate ? { animationDelay: '2000ms' } : undefined}
       >
         <NavigationMenuList>

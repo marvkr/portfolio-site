@@ -21,6 +21,27 @@ export const ExperienceData: ExperienceSection[] = [
     title: "WORK EXPERIENCE",
     projects: [
       {
+        name: "ODF",
+        role: "Product Engineer",
+        period: "December 2025 – Present",
+        location: "San Francisco, CA",
+        description: "",
+        technologies: [
+          ...getTechArray(["NEXTJS", "REACT", "REACT_NATIVE", "TYPESCRIPT", "TAILWINDCSS", "HONOJS", "DRIZZLEORM"]),
+          "Expo",
+          "TanStack Query",
+          "Zustand",
+          "Zod",
+          "Shadcn/ui",
+          "TipTap",
+          "Framer Motion",
+          "Auth0",
+          "Cloudflare Workers",
+          "Upstash Redis",
+        ],
+        links: ["https://joinodf.com"],
+      },
+      {
         name: "Procureezy",
         role: "Co-Founder & CTPO",
         period: "April 2024 – September 2024",
