@@ -60,5 +60,5 @@ src/
 ## Contact
 
 - **Email**: marvinkr@icloud.com
-- **LinkedIn**: [linkedin.com/in/marvinkr](https://linkedin.com/in/marvinkr)
+- **LinkedIn**: [linkedin.com/in/marvinkaunda](https://www.linkedin.com/in/marvinkaunda)
 - **GitHub**: [github.com/marvkr](https://github.com/marvkr)
