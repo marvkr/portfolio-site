@@ -23,9 +23,10 @@ export const ExperienceData: ExperienceSection[] = [
       {
         name: "ODF",
         role: "Product Engineer",
-        period: "December 2025 – Present",
+        period: "July 2025 – March 2026",
         location: "San Francisco, CA",
-        description: "",
+        description:
+          "Led product and engineering for the platform connecting ODF's founder community, where >1k startups have been created and >$2B raised. Owned the full product lifecycle from scoping and design to shipping across backend, web, and mobile.",
         technologies: [
           ...getTechArray(["NEXTJS", "REACT", "REACT_NATIVE", "TYPESCRIPT", "TAILWINDCSS", "HONOJS", "DRIZZLEORM"]),
           "Expo",
@@ -39,7 +40,13 @@ export const ExperienceData: ExperienceSection[] = [
           "Cloudflare Workers",
           "Upstash Redis",
         ],
-        links: ["https://joinodf.com"],
+        links: ["https://club.joinodf.com", "https://joinodf.com/companies"],
+        achievements: [
+          "Built the community directory web app in Next.js",
+          "Built the mobile app in React Native (Expo), shipped to iOS",
+          "Built the backend API on Cloudflare Workers",
+          "Shipped real-time messaging with threads and reactions",
+        ],
       },
       {
         name: "Procureezy",
