@@ -79,7 +79,7 @@ export function MenuTabs() {
                           </span>
                         )}
                         {project.winner && (
-                          <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider font-semibold bg-primary text-primary-foreground px-1.5 py-0.5 rounded">
+                          <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider font-semibold bg-primary text-white px-1.5 py-0.5 rounded">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="w-3 h-3"
