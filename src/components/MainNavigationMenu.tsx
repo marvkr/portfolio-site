@@ -116,8 +116,8 @@ export function MainNavigationMenu() {
           </NavigationMenuItem>
           <NavigationMenuItem className="max-sm:hidden">
             <NavigationMenuLink>
-              <a key="s" href="/skills" className={navigationMenuTriggerStyle()}>
-                Skills
+              <a key="p" href="/projects" className={navigationMenuTriggerStyle()}>
+                Projects
               </a>
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -163,8 +163,8 @@ export function MainNavigationMenu() {
           </a>
           <a
             className="text-7xl hover:text-primary transition-colors"
-            href="/skills">
-            Skills
+            href="/projects">
+            Projects
           </a>
         </div>
       </div>

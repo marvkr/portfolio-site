@@ -1,4 +1,4 @@
-import { TECHNOLOGIES, getTechArray } from "./skills";
+import { getTechArray } from "./skills";
 
 export type Project = {
   name: string;
@@ -56,7 +56,7 @@ export const ExperienceData: ExperienceSection[] = [
         description:
           "Procureezy.com is AI sourcing copilot for hardware engineers to tackle the thousands of hours lost in sourcing per engineer per year.",
         technologies: [
-          ...getTechArray(["NEXTJS", "TYPESCRIPT", "TAILWINDCSS", "HONOJS", "DRIZZLEORM", "VERCEL", "REACT", "LANGGRAPH"]),
+          ...getTechArray(["NEXTJS", "TYPESCRIPT", "TAILWINDCSS", "HONOJS", "DRIZZLEORM", "VERCEL", "REACT", "PYTHON", "LANGGRAPH"]),
           "Shadcn/ui",
           "Nuqs",
           "OpenAPI",
@@ -69,7 +69,6 @@ export const ExperienceData: ExperienceSection[] = [
           "Better Auth",
           "Langfuse",
           "Vercel AI SDK",
-          "Python",
         ],
         links: [
           "https://web.archive.org/web/20250906221019/https://procureezy.com/",

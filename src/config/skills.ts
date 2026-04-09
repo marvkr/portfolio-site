@@ -1,4 +1,4 @@
-// Technology constants - keep these in sync with src/pages/skills.astro
+// Technology constants - keep these in sync with src/pages/experience.astro
 export const TECHNOLOGIES = {
   // Frontend Frameworks
   NEXTJS: "NextJS",
@@ -7,9 +7,9 @@ export const TECHNOLOGIES = {
   // Languages
   HTML: "HTML",
   CSS: "CSS",
-  JAVASCRIPT: "JavaScript",
   TYPESCRIPT: "TypeScript",
-  GOLANG: "Golang",
+  JAVASCRIPT: "JavaScript",
+  PYTHON: "Python",
 
   // Styling
   TAILWINDCSS: "TailwindCSS",
@@ -17,14 +17,16 @@ export const TECHNOLOGIES = {
   // Backend & APIs
   NODEJS: "NodeJS",
   HONOJS: "HonoJS",
-  TRPC: "tRPC",
+  FASTAPI: "FastAPI",
 
-  // Mobile
+  // Mobile & Desktop
   REACT_NATIVE: "React Native",
   SWIFTUI: "SwiftUI",
+  ELECTRON: "Electron",
 
-  // Infrastructure & Deployment
+  // Infrastructure & Workflow
   VERCEL: "Vercel",
+  TEMPORAL: "Temporal",
 
   // State Management & Data
   REACT_QUERY: "React Query",

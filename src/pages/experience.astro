@@ -1,6 +1,8 @@
 ---
 import { MenuTabs } from "@/components/MenuTabs";
 import Layout from "@/layouts/Layout.astro";
+import { TECHNOLOGIES, CORE_SKILLS, LANGUAGES } from "@/config/skills";
+import { TechnologyBadge } from "@/components/TechnologyBadge";
 ---
 
 <Layout
@@ -141,7 +143,7 @@ import Layout from "@/layouts/Layout.astro";
       <div class="px-4 animate-fade-in" style="animation-delay: 560ms;">
         <MenuTabs client:load />
       </div>
-      <div class="px-4 pb-4">
+      <div class="px-4 pb-4 flex flex-col gap-4">
         <div
           class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-6 animate-fade-in"
           style="animation-delay: 640ms;">
@@ -169,6 +171,49 @@ import Layout from "@/layouts/Layout.astro";
               </div>
               <div>Solvay Business School, Brussels (2015-2018)</div>
             </div>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-6 animate-fade-in"
+          style="animation-delay: 720ms;">
+          <h3 class="text-lg font-semibold mb-4 text-primary">Technologies</h3>
+          <div class="flex flex-wrap gap-2">
+            {
+              Object.values(TECHNOLOGIES).map((tech) => (
+                <TechnologyBadge technology={tech} />
+              ))
+            }
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-6 animate-fade-in"
+          style="animation-delay: 800ms;">
+          <h3 class="text-lg font-semibold mb-4 text-primary">Core Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            {
+              CORE_SKILLS.map((skill) => (
+                <span class="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded w-fit">
+                  {skill}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-6 animate-fade-in"
+          style="animation-delay: 880ms;">
+          <h3 class="text-lg font-semibold mb-4 text-primary">Languages</h3>
+          <div class="flex flex-wrap gap-2">
+            {
+              LANGUAGES.map((language) => (
+                <span class="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded w-fit">
+                  {language}
+                </span>
+              ))
+            }
           </div>
         </div>
       </div>

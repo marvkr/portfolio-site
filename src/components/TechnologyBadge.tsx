@@ -1,4 +1,3 @@
-import * as React from "react";
 import { TECHNOLOGIES } from "@/config/skills";
 
 interface TechnologyBadgeProps {
@@ -10,7 +9,7 @@ interface TechnologyBadgeProps {
 const getTechIcon = (tech: string) => {
   switch (tech) {
     case TECHNOLOGIES.NEXTJS:
-      return <img src="/nextjs.svg" alt="NextJS" className="w-3 h-3" />;
+      return <img src="/nextjs.svg" alt="NextJS" className="w-3 h-3 dark:invert" />;
 
     case TECHNOLOGIES.REACT:
       return (
@@ -69,10 +68,22 @@ const getTechIcon = (tech: string) => {
       );
 
     case TECHNOLOGIES.SWIFTUI:
-      return <img src="/swiftui.svg" alt="SwiftUI" className="w-3 h-3" />;
+      return <img src="/swiftui.svg" alt="SwiftUI" className="w-3 h-3 dark:invert" />;
+
+    case TECHNOLOGIES.ELECTRON:
+      return <img src="/electron.svg" alt="Electron" className="w-3 h-3 dark:invert" />;
 
     case TECHNOLOGIES.HONOJS:
-      return <img src="/honojs.svg" alt="HonoJS" className="w-3 h-3" />;
+      return <img src="/honojs.svg" alt="HonoJS" className="w-3 h-3 dark:invert" />;
+
+    case TECHNOLOGIES.FASTAPI:
+      return <img src="/fastapi.svg" alt="FastAPI" className="w-3 h-3 dark:invert" />;
+
+    case TECHNOLOGIES.PYTHON:
+      return <img src="/python.svg" alt="Python" className="w-3 h-3 dark:invert" />;
+
+    case TECHNOLOGIES.TEMPORAL:
+      return <img src="/temporal.svg" alt="Temporal" className="w-3 h-3 dark:invert" />;
 
     case TECHNOLOGIES.VERCEL:
       return (
@@ -82,33 +93,19 @@ const getTechIcon = (tech: string) => {
       );
 
     case TECHNOLOGIES.REACT_QUERY:
-      return <img src="/reactquery.svg" alt="React Query" className="w-3 h-3" />;
-
-    case TECHNOLOGIES.TRPC:
-      return (
-        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 12c0 6.62-5.38 12-12 12S0 18.62 0 12 5.38 0 12 0s12 5.38 12 12ZM1.21 12A10.78 10.78 0 0 0 12 22.79 10.78 10.78 0 0 0 22.79 12 10.78 10.78 0 0 0 12 1.21 10.78 10.78 0 0 0 1.21 12Zm10.915-6.086 2.162 1.248a.25.25 0 0 1 .125.217v1.103l2.473 1.428a.25.25 0 0 1 .125.217v2.355l.955.551a.25.25 0 0 1 .125.217v2.496a.25.25 0 0 1-.125.217l-2.162 1.248a.25.25 0 0 1-.25 0l-.956-.552-2.472 1.427a.25.25 0 0 1-.25 0l-2.472-1.427-.956.552a.25.25 0 0 1-.25 0l-2.162-1.248a.25.25 0 0 1-.125-.217V13.25a.25.25 0 0 1 .125-.217l.955-.551v-2.355a.25.25 0 0 1 .125-.217l2.473-1.428V7.38a.25.25 0 0 1 .125-.217l2.162-1.248a.25.25 0 0 1 .25 0Zm1.268 10.049a.25.25 0 0 1-.125.217l-1.349.779a.25.25 0 0 1-.25 0l-1.35-.78a.25.25 0 0 1-.124-.216v-1.558a.25.25 0 0 1 .125-.217l1.349-.779a.25.25 0 0 1 .25 0l1.349.78a.25.25 0 0 1 .125.216Zm.956-3.593a.25.25 0 0 1 .125-.217l1.349-.78a.25.25 0 0 1 .25 0l1.35.78a.25.25 0 0 1 .124.217v1.558a.25.25 0 0 1-.125.217l-1.349.779a.25.25 0 0 1-.25 0l-1.349-.78a.25.25 0 0 1-.125-.216Zm-4.91 0a.25.25 0 0 1 .125-.217l1.349-.78a.25.25 0 0 1 .25 0l1.349.78a.25.25 0 0 1 .125.217v1.558a.25.25 0 0 1-.125.217l-1.349.779a.25.25 0 0 1-.25 0l-1.35-.78a.25.25 0 0 1-.124-.216Zm2.497-3.653 1.204.695v1.51a.25.25 0 0 1-.038.131l-.957.553V9.211a.25.25 0 0 1 .125-.217l1.35-.78a.249.249 0 0 1 .187-.036Zm3.097 0a.249.249 0 0 1 .187.037l1.35.779a.25.25 0 0 1 .124.217v2.496l-.956-.552a.25.25 0 0 1-.038-.131v-1.511ZM9.06 10.37a.25.25 0 0 1 .125.217v1.104l.956.552V9.525a.253.253 0 0 1 .033-.125l-1.114-.644Zm5.88 0-1.114.644a.253.253 0 0 1 .032.125v2.718l.957-.552v-1.104a.25.25 0 0 1 .125-.217Z" />
-        </svg>
-      );
-
-    case TECHNOLOGIES.GOLANG:
-      return (
-        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.811 10.231c-.047 0-.058-.023-.035-.059l.246-.315c.023-.035.081-.058.128-.058h4.172c.046 0 .058.035.035.07l-.199.303c-.023.036-.082.07-.117.07zM.047 11.306c-.047 0-.059-.023-.035-.058l.245-.316c.023-.035.082-.058.129-.058h5.328c.047 0 .07.035.058.07l-.093.28c-.012.047-.058.07-.105.07zm2.828 1.075c-.047 0-.059-.035-.035-.07l.163-.292c.023-.035.07-.07.117-.07h2.337c.047 0 .07.035.07.082l-.023.28c0 .047-.047.082-.082.082zm12.129-2.36c-.736.187-1.239.327-1.963.514-.176.046-.187.058-.34-.117-.174-.199-.303-.327-.548-.444-.737-.362-1.45-.257-2.115.175-.795.514-1.204 1.274-1.192 2.22.011.935.654 1.706 1.577 1.835.795.105 1.46-.175 1.987-.77.105-.13.198-.27.315-.434H10.47c-.245 0-.304-.152-.222-.35.152-.362.432-.97.596-1.274a.315.315 0 01.292-.187h4.253c-.023.316-.023.631-.07.947a4.983 4.983 0 01-.958 2.29c-.841 1.11-1.94 1.8-3.33 1.986-1.145.152-2.209-.07-3.143-.77-.865-.655-1.356-1.52-1.484-2.595-.152-1.274.222-2.419.993-3.424.83-1.086 1.928-1.776 3.272-2.02 1.098-.2 2.15-.07 3.096.571.62.41 1.063.97 1.356 1.648.07.105.023.164-.117.2m3.868 6.461c-1.064-.024-2.034-.328-2.852-1.029a3.665 3.665 0 01-1.262-2.255c-.21-1.32.152-2.489.947-3.529.853-1.122 1.881-1.706 3.272-1.95 1.192-.21 2.314-.095 3.33.595.923.63 1.496 1.484 1.648 2.605.198 1.578-.257 2.863-1.344 3.962-.771.783-1.718 1.273-2.805 1.495-.315.06-.63.07-.934.106zm2.78-4.72c-.011-.153-.011-.27-.034-.387-.21-1.157-1.274-1.81-2.384-1.554-1.087.245-1.788.935-2.045 2.033-.21.912.234 1.835 1.075 2.21.643.28 1.285.244 1.905-.07.923-.48 1.425-1.228 1.484-2.233z" />
-        </svg>
-      );
+      return <img src="/reactquery.svg" alt="React Query" className="w-3 h-3 dark:invert" />;
 
     case TECHNOLOGIES.LANGGRAPH:
-      return <img src="/langgraph.svg" alt="LangGraph" className="w-3 h-3" />;
+      return <img src="/langgraph.svg" alt="LangGraph" className="w-3 h-3 dark:invert" />;
 
     case TECHNOLOGIES.DRIZZLEORM:
-      return <img src="/drizzle.svg" alt="DrizzleORM" className="w-3 h-3" />;
+      return <img src="/drizzle.svg" alt="DrizzleORM" className="w-3 h-3 dark:invert" />;
 
     case TECHNOLOGIES.WEBFLOW:
-      return <img src="/webflow.svg" alt="Webflow" className="w-3 h-3" />;
+      return <img src="/webflow.svg" alt="Webflow" className="w-3 h-3 dark:invert" />;
 
     case TECHNOLOGIES.FIGMA:
-      return <img src="/figma.svg" alt="Figma" className="w-3 h-3" />;
+      return <img src="/figma.svg" alt="Figma" className="w-3 h-3 dark:invert" />;
 
     default:
       return null;
