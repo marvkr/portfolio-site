@@ -36,7 +36,7 @@ export function TestimonialCard() {
               <li key={idx}>
                 <figure>
                   <blockquote>
-                    <p className="text-foreground text-xl font-semibold">
+                    <p className="font-sans text-foreground text-xl font-semibold">
                       “{item.quote}“
                     </p>
                   </blockquote>

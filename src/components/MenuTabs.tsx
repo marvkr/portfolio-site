@@ -58,7 +58,7 @@ export function MenuTabs() {
                     </div>
                     <p className="text-sm text-muted-foreground font-medium mt-1 sm:mt-0">{project.period}</p>
                   </div>
-                  <p className="text-sm text-foreground mb-4">
+                  <p className="font-sans text-sm text-foreground mb-4">
                     {project.description}
                   </p>
 
