@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         juana: ["Juana", "sans-serif"],
         caveat: ["caveat"],
+        sans: ["Geist", "system-ui", "sans-serif"],
       },
       fontWeight: {
         extralight: 200,
