@@ -67,7 +67,7 @@ export function MenuTabs() {
                       <h4 className="text-sm font-semibold mb-2 text-primary">Key Achievements:</h4>
                       <ul className="space-y-3">
                         {project.achievements.map((achievement, index) => (
-                          <li key={index} className="text-xs text-muted-foreground flex items-start">
+                          <li key={index} className="font-sans text-xs text-muted-foreground flex items-start">
                             <span className="mr-2 text-primary">•</span>
                             <span>{parseTextWithLinks(achievement)}</span>
                           </li>
