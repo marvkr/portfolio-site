@@ -1,5 +1,4 @@
 import * as React from "react";
-import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExperienceData } from "@/config/experience";
 import { TechnologyBadge } from "@/components/TechnologyBadge";
@@ -49,12 +48,22 @@ export function MenuTabs() {
               {section.projects.map((project) => (
                 <div key={project.name} className="border-b border-border py-6">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
-                    <div>
-                      <h2 className="text-xl font-bold">{project.name}</h2>
-                      <p className="text-primary font-medium">{project.role}</p>
-                      {project.location && (
-                        <p className="text-xs text-muted-foreground">{project.location}</p>
+                    <div className="flex items-start gap-3">
+                      {project.logo && (
+                        <img
+                          src={project.logo}
+                          alt={`${project.name} logo`}
+                          className="h-8 w-8 shrink-0 rounded-lg object-contain"
+                          loading="lazy"
+                        />
                       )}
+                      <div>
+                        <h2 className="text-xl font-bold">{project.name}</h2>
+                        <p className="text-primary font-medium">{project.role}</p>
+                        {project.location && (
+                          <p className="text-xs text-muted-foreground">{project.location}</p>
+                        )}
+                      </div>
                     </div>
                     <p className="text-sm text-muted-foreground font-medium mt-1 sm:mt-0">{project.period}</p>
                   </div>

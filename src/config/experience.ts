@@ -5,6 +5,7 @@ export type Project = {
   role: string;
   period: string;
   location?: string;
+  logo?: string;
   description: string;
   technologies: string[];
   links?: string[];
@@ -25,6 +26,7 @@ export const ExperienceData: ExperienceSection[] = [
         role: "Founder",
         period: "March 2026 – Present",
         location: "San Francisco, CA",
+        logo: "/better-design.svg",
         description:
           "Better Design is an MCP server that turns AI coding tools (Cursor, Claude Code, claude.ai) into design engineers — auto-loading UI/UX principles and running accessibility self-reviews so AI-generated UI follows real product-design standards.",
         technologies: [
@@ -46,6 +48,7 @@ export const ExperienceData: ExperienceSection[] = [
         role: "Product Engineer",
         period: "July 2025 – March 2026",
         location: "San Francisco, CA",
+        logo: "/odf-logo.svg",
         description:
           "Led product and engineering for the platform connecting ODF's founder community, where >1k startups have been created and >$2B raised. Owned the full product lifecycle from scoping and design to shipping across backend, web, and mobile.",
         technologies: [
@@ -74,6 +77,7 @@ export const ExperienceData: ExperienceSection[] = [
         role: "Co-Founder & CTPO",
         period: "April 2024 – September 2024",
         location: "Paris, France",
+        logo: "/procureezy.svg",
         description:
           "Procureezy.com is AI sourcing copilot for hardware engineers to tackle the thousands of hours lost in sourcing per engineer per year.",
         technologies: [
@@ -104,6 +108,7 @@ export const ExperienceData: ExperienceSection[] = [
         role: "Founder",
         period: "Oct. 2021 – Dec. 2023",
         location: "Brussels, Belgium",
+        logo: "/cocktailanddinner-logo.jpg",
         description:
           "Marketplace to rent kitchens and dining rooms of private homes",
         technologies: [
@@ -129,6 +134,7 @@ export const ExperienceData: ExperienceSection[] = [
         role: "Freelance",
         period: "Oct. 2021 - Present",
         location: "Remote",
+        logo: "/flowsstudio-logo.jpg",
         description:
           "Designed and developed websites for early-stage startups, SMEs and non-profits.",
         technologies: getTechArray(["REACT", "NEXTJS", "TAILWINDCSS", "WEBFLOW", "FIGMA"]),
@@ -152,6 +158,7 @@ export const ExperienceData: ExperienceSection[] = [
         role: "Founder",
         period: "Sept. 2020 – March 2021",
         location: "Brussels, Belgium",
+        logo: "/owaste-logo.jpg",
         description:
           "An eco-friendly e-commerce for sustainable men's products. (built as part of my master thesis)",
         technologies: [
