@@ -21,6 +21,27 @@ export const ExperienceData: ExperienceSection[] = [
     title: "WORK EXPERIENCE",
     projects: [
       {
+        name: "Better Design",
+        role: "Founder",
+        period: "March 2026 – Present",
+        location: "San Francisco, CA",
+        description:
+          "Better Design is an MCP server that turns AI coding tools (Cursor, Claude Code, claude.ai) into design engineers — auto-loading UI/UX principles and running accessibility self-reviews so AI-generated UI follows real product-design standards.",
+        technologies: [
+          ...getTechArray(["NEXTJS", "TYPESCRIPT", "TAILWINDCSS", "HONOJS", "DRIZZLEORM"]),
+          "Shadcn/ui",
+          "PostgreSQL",
+          "Inngest",
+          "Bun",
+        ],
+        links: ["https://better-design.com"],
+        achievements: [
+          "Grew to 92 users and 411 design systems generated, with 124 GitHub stars and 1,222 monthly npm downloads on the MCP server",
+          "Built semantic design-system search matching projects to 47+ open-source shadcn/ui design systems, scaffolding the right tokens, an 87-component library, and open-source icon libraries on demand",
+          "Shipped one-click MCP install across Cursor, Claude Code, VS Code, Windsurf, ChatGPT, Lovable, v0, and 11+ AI coding tools",
+        ],
+      },
+      {
         name: "ODF",
         role: "Product Engineer",
         period: "July 2025 – March 2026",
