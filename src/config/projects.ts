@@ -29,6 +29,7 @@ export const PROJECTS: Project[] = [
     hackathon: "Better Hack",
     hackathonLogos: [
       { name: "Better Auth", src: "/hackathons/better-auth.svg" },
+      { name: "Y Combinator", src: "/hackathons/y-combinator.svg" },
     ],
   },
   {
