@@ -188,6 +188,13 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    html,
+    #experience-content {
+      scroll-behavior: auto;
+    }
+  }
 }
 
 @keyframes fade-in {

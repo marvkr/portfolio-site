@@ -1,5 +1,5 @@
 ---
-import { MenuTabs } from "@/components/MenuTabs";
+import { ExperienceSectionNav, MenuTabs } from "@/components/MenuTabs";
 import Layout from "@/layouts/Layout.astro";
 import { TECHNOLOGIES, CORE_SKILLS, LANGUAGES } from "@/config/skills";
 import { TechnologyBadge } from "@/components/TechnologyBadge";
@@ -142,12 +142,23 @@ import { TechnologyBadge } from "@/components/TechnologyBadge";
       </div>
     </div>
     <div
-      class="relative py-4 flex flex-col gap-6 overflow-auto rounded-3xl border border-border bg-cover bg-scroll animate-fade-in"
+      id="experience-panel"
+      class="relative min-h-0 flex flex-col [overflow:clip] rounded-3xl border border-border bg-cover bg-scroll animate-fade-in"
       style="background-image: var(--menu-background-image); animation-delay: 480ms;">
-      <div class="px-4 animate-fade-in" style="animation-delay: 560ms;">
-        <MenuTabs client:load />
+      <div
+        class="z-10 shrink-0 [overflow:clip] rounded-t-3xl px-4 py-4 animate-fade-in"
+        style="animation-delay: 560ms;">
+        <ExperienceSectionNav client:load />
       </div>
-      <div class="px-4 pb-4 flex flex-col gap-4">
+      <div class="min-h-0 flex-1 px-4 pb-4">
+        <div class="h-full [overflow:clip] rounded-xl">
+          <div
+            id="experience-content"
+            class="h-full overflow-auto overscroll-contain scroll-smooth motion-reduce:scroll-auto [scrollbar-gutter:stable]">
+            <div class="animate-fade-in" style="animation-delay: 640ms;">
+              <MenuTabs />
+            </div>
+            <div class="pt-6 flex flex-col gap-4">
         <div
           class="rounded-xl border border-border/50 bg-background/80 backdrop-blur-xs p-6 animate-fade-in"
           style="animation-delay: 640ms;">
@@ -250,6 +261,9 @@ import { TechnologyBadge } from "@/components/TechnologyBadge";
                 </span>
               ))
             }
+          </div>
+        </div>
+            </div>
           </div>
         </div>
       </div>
