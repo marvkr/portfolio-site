@@ -29,7 +29,10 @@ export function HamburgerMenu({
   }, [isOpen]);
   return (
     <Button
-      className="flex flex-col justify-center items-center"
+      aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+      aria-expanded={isOpen}
+      aria-controls="mobile-navigation"
+      className="flex min-h-11 min-w-11 flex-col items-center justify-center"
       onClick={handleClick}
       variant={variant}>
       <span

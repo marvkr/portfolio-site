@@ -55,7 +55,9 @@ import SmallCard from "@/components/SmallCard.astro";
         <a
           href="https://github.com/marvkr"
           target="_blank"
-          class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+          rel="noopener noreferrer"
+          aria-label="GitHub profile"
+          class="h-11 w-11 p-2.5 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
           style="animation-delay: 240ms;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +74,9 @@ import SmallCard from "@/components/SmallCard.astro";
         <a
           href="https://www.linkedin.com/in/marvinkaunda"
           target="_blank"
-          class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn profile"
+          class="h-11 w-11 p-2.5 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
           style="animation-delay: 320ms;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +92,8 @@ import SmallCard from "@/components/SmallCard.astro";
         <!-- Email icon -->
         <a
           href="mailto:marvinkr@icloud.com"
-          class="h-9 w-9 p-2 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
+          aria-label="Email Marvin"
+          class="h-11 w-11 p-2.5 relative rounded-full border border-border overflow-hidden hover:bg-foreground/10 hover:border-white/30 ease-in duration-100 animate-fade-in"
           style="animation-delay: 400ms;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -155,18 +160,12 @@ import SmallCard from "@/components/SmallCard.astro";
       </div>
     </div>
     <div
-      class="lg:col-span-2 max-sm:flex max-sm:flex-col grid grid-rows-2 gap-4">
+      class="lg:col-span-2 flex">
       <SmallCard
         title="Experience"
         link="/experience"
         image="/images/experience.webp"
         animationDelay="1520ms"
-      />
-      <SmallCard
-        title="Projects"
-        link="/projects"
-        image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
-        animationDelay="1680ms"
       />
     </div>
   </div>

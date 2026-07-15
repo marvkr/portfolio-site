@@ -44,6 +44,8 @@ const { title, description, image } = Astro.props;
 	</head>
 	<body>
 		<MainNavigationMenu client:load/>
-		<slot />
+		<main id="main-content">
+			<slot />
+		</main>
 	</body>
 </html>

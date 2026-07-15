@@ -8,14 +8,18 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    name: "swift-mcp",
+    name: "Warmline",
     description:
-      "MCP server that feeds AI coding agents curated SwiftUI snippets and learning resources with hybrid semantic + keyword search.",
+      "A proactive AI agent that maps warm connections across contacts, calendars, Gmail, and live professional data, then surfaces the strongest path to an introduction with a drafted opener.",
+    link: "https://github.com/marvkr/warmline",
+    hackathon: "YC AI Growth Hackathon",
   },
   {
-    name: "system-design-mcp",
+    name: "Dispatch",
     description:
-      "MCP server for querying curated system design articles — hybrid semantic + keyword search across 600+ chunks, with architecture diagrams extracted as mermaid syntax.",
+      "An AI-native task router that assigns work by capacity, skills, priorities, and deadlines, completes suitable tasks autonomously, and manages progress without workplace chat.",
+    link: "https://github.com/marvkr/better-slack",
+    hackathon: "Better Hack",
   },
   {
     name: "Better Design",

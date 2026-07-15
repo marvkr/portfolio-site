@@ -36,6 +36,10 @@ module.exports = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        winner: {
+          DEFAULT: "hsl(var(--winner))",
+          foreground: "hsl(var(--winner-foreground))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
