@@ -2,24 +2,22 @@
 type Props = {
   title: string;
   link: string;
-  image:string;
+  image: string;
   animationDelay?: string;
+  preserveImage?: boolean;
 };
 
-const { title } = Astro.props;
-const { link } = Astro.props;
-const { image } = Astro.props;
-const { animationDelay } = Astro.props;
+const { title, link, image, animationDelay, preserveImage = false } = Astro.props;
 ---
 
 <a
-  class={`w-full h-80 md:h-96 lg:h-full group relative rounded-2xl overflow-hidden ${animationDelay ? 'animate-fade-in' : ''}`}
+  class={`w-full h-80 md:h-96 lg:h-full group relative rounded-2xl overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background ${preserveImage ? 'bg-[linear-gradient(to_bottom,#366df5_0%,#366df5_34%,#3349f6_70%,#3349f6_100%)]' : ''} ${animationDelay ? 'animate-fade-in' : ''}`}
   {...(animationDelay && { style: `animation-delay: ${animationDelay}` })}
   href={link}>
   <img
-    class="absolute w-full h-full object-cover z-0 border-none"
+    class={`absolute h-full w-full border-none ${preserveImage ? 'object-contain scale-[1.25] md:scale-100 lg:scale-[1.65] [mask-image:linear-gradient(to_bottom,transparent_0%,black_18%,black_82%,transparent_100%)]' : 'object-cover'}`}
     src={image}
-    alt="Menu Image" />
+    alt={`${title} preview`} />
   <div
     class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent"></div>
   <div

@@ -194,6 +194,11 @@
     #experience-content {
       scroll-behavior: auto;
     }
+
+    .animate-fade-in {
+      animation: none;
+      opacity: 1;
+    }
   }
 }
 

@@ -1,0 +1,85 @@
+---
+type Props = {
+  titleId?: string;
+  animationDelay?: string;
+};
+
+const { titleId = "press-card-title", animationDelay = "1680ms" } = Astro.props;
+
+const pressItems = [
+  {
+    publication: "Bloomberg",
+    logo: "bloomberg",
+    description: "AI tools changing software development",
+    articleUrl:
+      "https://www.bloomberg.com/news/features/2026-07-16/anthropic-and-openai-tools-transform-the-profession-of-coding",
+  },
+  {
+    publication: "Vlerick Business School",
+    logo: "vlerick",
+    description: "3D game creator and published recap co-author",
+    articleUrl:
+      "https://mastersblog.vlerick.com/2021/03/gaming-esports-elective-game-on/",
+  },
+  {
+    publication: "Le Soir",
+    logo: "le-soir",
+    description: "Fundraiser for hospitals and local communities",
+    articleUrl:
+      "https://www.lesoir.be/305370/article/2020-06-05/les-noms-de-domaine-lies-au-corona-se-vendent-comme-des-petits-pains",
+  },
+];
+---
+
+<section
+  aria-labelledby={titleId}
+  class="rounded-2xl border border-border bg-background/80 p-4 font-sans backdrop-blur-xs animate-fade-in"
+  style={`animation-delay: ${animationDelay};`}>
+  <h2 id={titleId} class="font-juana text-xl font-medium">
+    Featured in
+  </h2>
+
+  <ul class="mt-2 divide-y divide-border/60">
+    {
+      pressItems.map((item) => (
+        <li>
+          <a
+            href={item.articleUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${item.publication}: ${item.description}`}
+            class="group flex min-h-14 items-center justify-between gap-3 rounded-md py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+            <div
+              aria-hidden="true"
+              class="flex h-9 w-24 shrink-0 items-center">
+              <img
+                src={`/logos/${item.logo}.svg`}
+                alt=""
+                loading="lazy"
+                class="h-full w-full object-contain object-left transition-opacity duration-150 group-hover:opacity-70 dark:invert motion-reduce:transition-none"
+              />
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="sr-only">{item.publication}</h3>
+              <p class="text-xs leading-4 text-muted-foreground">
+                {item.description}
+              </p>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="h-4 w-4 shrink-0 stroke-muted-foreground transition-transform duration-150 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:stroke-foreground motion-reduce:transition-none"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7 17L17 7M9 7H17V15"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
