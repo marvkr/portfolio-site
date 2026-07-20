@@ -242,7 +242,7 @@ export function ExperienceSectionNav() {
             aria-controls={PROJECTS_TAB}
             className="h-full text-xs font-bold"
           >
-            Projects
+            Hackathons
           </TabsTrigger>
         </TabsList>
       </Tabs>
@@ -356,11 +356,11 @@ export function MenuTabs() {
       </section>
       <section
         id={PROJECTS_TAB}
-        aria-labelledby="projects-heading"
+        aria-labelledby="hackathons-heading"
         className="scroll-mt-4 border-t border-border pt-10"
       >
-        <h2 id="projects-heading" className="mb-2 text-xl font-bold">
-          Projects
+        <h2 id="hackathons-heading" className="mb-2 text-xl font-bold">
+          Hackathons
         </h2>
         {PROJECTS.map((project) => (
           <ProjectCard key={project.name} project={project} />

@@ -53,11 +53,6 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    name: "AI note taking app",
-    description:
-      "Desktop app with reliable audio recording, crash recovery, and automatic meeting detection.",
-  },
-  {
     name: "Fixit",
     description:
       "Auto-fixes bugs from Sentry errors using a Claude Agent loop with CodeRabbit reviews and Daytona sandboxes.",
