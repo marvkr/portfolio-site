@@ -31,6 +31,8 @@ export const ExperienceData: ExperienceSection[] = [
           "Better Design is an MCP server that turns AI coding tools (Cursor, Claude Code, claude.ai) into design engineers — auto-loading UI/UX principles and running accessibility self-reviews so AI-generated UI follows real product-design standards.",
         technologies: [
           ...getTechArray(["NEXTJS", "TYPESCRIPT", "TAILWINDCSS", "HONOJS", "DRIZZLEORM"]),
+          "Rust",
+          "WebAssembly",
           "Shadcn/ui",
           "PostgreSQL",
           "Inngest",
@@ -41,6 +43,7 @@ export const ExperienceData: ExperienceSection[] = [
           "Grew to 92 users and 411 design systems generated, with 124 GitHub stars and 1,222 monthly npm downloads on the MCP server",
           "Built semantic design-system search matching projects to 47+ open-source shadcn/ui design systems, scaffolding the right tokens, an 87-component library, and open-source icon libraries on demand",
           "Shipped one-click MCP install across Cursor, Claude Code, VS Code, Windsurf, ChatGPT, Lovable, v0, and 11+ AI coding tools",
+          "Ported the CLI's Node scripts and its duplicated JS design-rule detector into one Rust binary that also compiles to WebAssembly for the browser extension — 12× faster command startup (23.3 → 1.9ms) and 4× faster post-edit design checks (46.9 → 10.6ms), verified by replaying 830 recorded command runs",
         ],
       },
       {
