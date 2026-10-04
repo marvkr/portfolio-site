@@ -37,11 +37,6 @@ export const ExperienceData: ExperienceSection[] = [
           "Bun",
         ],
         links: ["https://better-design.com"],
-        achievements: [
-          "Grew to 92 users and 411 design systems generated, with 124 GitHub stars and 1,222 monthly npm downloads on the MCP server",
-          "Built semantic design-system search matching projects to 47+ open-source shadcn/ui design systems, scaffolding the right tokens, an 87-component library, and open-source icon libraries on demand",
-          "Shipped one-click MCP install across Cursor, Claude Code, VS Code, Windsurf, ChatGPT, Lovable, v0, and 11+ AI coding tools",
-        ],
       },
       {
         name: "ODF",
